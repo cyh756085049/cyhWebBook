@@ -1,0 +1,978 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>判断数据类型及方法对比 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="类数组与数组的区别与转换.html" />
+    
+    
+    <link rel="prev" href="原始值和引用值类型及区别.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    前端知识
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="HTML.html">
+            
+                <a href="HTML.html">
+            
+                    
+                    HTML(HTML5)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="CSS.html">
+            
+                <a href="CSS.html">
+            
+                    
+                    CSS(CSS3)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="JavaScript.html">
+            
+                <a href="JavaScript.html">
+            
+                    
+                    JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="原始值和引用值类型及区别.html">
+            
+                <a href="原始值和引用值类型及区别.html">
+            
+                    
+                    原始值和引用值类型及区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3.2" data-path="判断数据类型及方法对比.html">
+            
+                <a href="判断数据类型及方法对比.html">
+            
+                    
+                    判断数据类型及方法对比
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="类数组与数组的区别与转换.html">
+            
+                <a href="类数组与数组的区别与转换.html">
+            
+                    
+                    类数组与数组的区别与转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="闭包及其作用.html">
+            
+                <a href="闭包及其作用.html">
+            
+                    
+                    闭包及其作用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="原型和原型链.html">
+            
+                <a href="原型和原型链.html">
+            
+                    
+                    原型和原型链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.6" data-path="作用域和作用域链、执行期上下文.html">
+            
+                <a href="作用域和作用域链、执行期上下文.html">
+            
+                    
+                    作用域和作用域链、执行期上下文
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.7" data-path="深拷贝与浅拷贝.html">
+            
+                <a href="深拷贝与浅拷贝.html">
+            
+                    
+                    深拷贝与浅拷贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="ES6.html">
+            
+                <a href="ES6.html">
+            
+                    
+                    ES6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" >
+            
+                <span>
+            
+                    
+                    JQuery
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="NodeJS.html">
+            
+                <a href="NodeJS.html">
+            
+                    
+                    NodeJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" >
+            
+                <span>
+            
+                    
+                    Web安全
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" >
+            
+                <span>
+            
+                    
+                    浏览器
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="前端工程化.html">
+            
+                <a href="前端工程化.html">
+            
+                    
+                    前端工程化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" >
+            
+                <span>
+            
+                    
+                    性能优化
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="手撕代码.html">
+            
+                <a href="手撕代码.html">
+            
+                    
+                    算法编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.11.1" data-path="剑指offer算法.html">
+            
+                <a href="剑指offer算法.html">
+            
+                    
+                    剑指Offer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" >
+            
+                <span>
+            
+                    
+                    MongoDB
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="数据可视化.html">
+            
+                <a href="数据可视化.html">
+            
+                    
+                    数据可视化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="小程序.html">
+            
+                <a href="小程序.html">
+            
+                    
+                    小程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    计算机基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="HTTP与计算机网络.html">
+            
+                <a href="HTTP与计算机网络.html">
+            
+                    
+                    计算机网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="数据可视化.html">
+            
+                <a href="数据可视化.html">
+            
+                    
+                    操作系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                    数据结构
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" >
+            
+                <span>
+            
+                    
+                    算法
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" >
+            
+                <span>
+            
+                    
+                    数据库
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    前端框架及工具
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" >
+            
+                <span>
+            
+                    
+                    Vue
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="React.html">
+            
+                <a href="React.html">
+            
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" >
+            
+                <span>
+            
+                    
+                    AngularJS
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" >
+            
+                <span>
+            
+                    
+                    Webpack
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" >
+            
+                <span>
+            
+                    
+                    TypeScript
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" >
+            
+                <span>
+            
+                    
+                    Element UI
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" >
+            
+                <span>
+            
+                    
+                    Bootstrap
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    秋招整理
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="腾讯前端面经.html">
+            
+                <a href="腾讯前端面经.html">
+            
+                    
+                    腾讯面经
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="前端笔试总结.html">
+            
+                <a href="前端笔试总结.html">
+            
+                    
+                    笔经整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="开放问题.html">
+            
+                <a href="开放问题.html">
+            
+                    
+                    开放问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >判断数据类型及方法对比</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h4 id="&#x5224;&#x65AD;&#x6570;&#x636E;&#x7C7B;&#x578B;typeof&#x3001;instanceof&#x3001;objectprototypetostringcall&#x3001;constructor">&#x5224;&#x65AD;&#x6570;&#x636E;&#x7C7B;&#x578B;typeof&#x3001;instanceof&#x3001;Object.prototype.toString.call()&#x3001;constructor</h4>
+<h4 id="1&#x3001;typeof">1&#x3001;typeof</h4>
+<p><code>typeof()</code>&#x8868;&#x793A;&#x201C;<strong>&#x83B7;&#x53D6;&#x53D8;&#x91CF;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;</strong>&#x201D;&#xFF0C;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x5C0F;&#x5199;&#xFF0C;&#x8BED;&#x6CD5;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// &#x5199;&#x6CD5;1</span>
+<span class="hljs-keyword">typeof</span> &#x53D8;&#x91CF;;
+<span class="hljs-comment">// &#x5199;&#x6CD5;2</span>
+<span class="hljs-keyword">typeof</span>(&#x53D8;&#x91CF;);
+</code></pre>
+<p><strong>typeof &#x8FD9;&#x4E2A;&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x5C31;&#x662F;&#x53D8;&#x91CF;&#x7684;&#x7C7B;&#x578B;&#x3002;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x7684;&#x7C7B;&#x578B;&#x662F;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x3002;</strong></p>
+<p><strong>&#x8FD4;&#x56DE;&#x7ED3;&#x679C;</strong>&#xFF1A;</p>
+<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlly1ghks3bm1d7j30u40h6wh2.jpg" alt=""></p>
+<table>
+<thead>
+<tr>
+<th>typeof &#x7684;&#x4EE3;&#x7801;&#x5199;&#x6CD5;</th>
+<th style="text-align:center">&#x8FD4;&#x56DE;&#x7ED3;&#x679C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>typeof &#x6570;&#x5B57;</td>
+<td style="text-align:center"><code>&quot;number&quot;</code></td>
+</tr>
+<tr>
+<td>typeof &#x5B57;&#x7B26;&#x4E32;</td>
+<td style="text-align:center"><code>&quot;string&quot;</code></td>
+</tr>
+<tr>
+<td>typeof &#x5E03;&#x5C14;&#x578B;</td>
+<td style="text-align:center"><code>&quot;boolean&quot;</code></td>
+</tr>
+<tr>
+<td>typeof &#x5BF9;&#x8C61;</td>
+<td style="text-align:center"><code>&quot;object&quot;</code></td>
+</tr>
+<tr>
+<td>==typeof &#x65B9;&#x6CD5;==</td>
+<td style="text-align:center"><code>&quot;function&quot;</code></td>
+</tr>
+<tr>
+<td>==typeof null==</td>
+<td style="text-align:center"><code>&quot;object&quot;</code></td>
+</tr>
+<tr>
+<td>typeof undefined</td>
+<td style="text-align:center"><code>&quot;undefined&quot;</code></td>
+</tr>
+<tr>
+<td>==typeof NaN==</td>
+<td style="text-align:center"><code>&quot;number&quot;</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>&#x6CE8;&#x610F; 1&#xFF1A;&#x4E3A;&#x4EC0;&#x4E48; <code>typeof null</code>&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x4E5F;&#x662F; <code>&quot;object&quot;</code>&#x5462;&#xFF1F;&#x56E0;&#x4E3A; null &#x4EE3;&#x8868;&#x7684;&#x662F;<strong>&#x7A7A;&#x5BF9;&#x8C61;</strong>&#x3002;</p>
+<p>&#x6CE8;&#x610F; 2&#xFF1A;<code>typeof NaN</code>&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x662F; <code>&quot;number&quot;</code>&#x3002;<strong>NaN</strong>&#x662F;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x7684;&#x6570;&#x5B57;&#xFF0C;&#x8868;&#x793A;Not a Number&#xFF0C;&#x975E;&#x6570;&#x503C;&#x3002;NaN &#x662F;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x7684;&#x6570;&#x5B57;&#x3002;Undefined&#x548C;&#x4EFB;&#x4F55;&#x6570;&#x503C;&#x8BA1;&#x7B97;&#x7684;&#x7ED3;&#x679C;&#x4E3A; NaN&#x3002;NaN &#x4E0E;&#x4EFB;&#x4F55;&#x503C;&#x90FD;&#x4E0D;&#x76F8;&#x7B49;&#xFF0C;&#x5305;&#x62EC; NaN &#x672C;&#x8EAB;&#x3002;</p>
+</blockquote>
+<p><strong>&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x4E3E;&#x4F8B;</strong>&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">typeof</span> []); <span class="hljs-comment">// &#x7A7A;&#x6570;&#x7EC4;&#x7684;&#x6253;&#x5370;&#x7ED3;&#x679C;&#xFF1A;object</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">typeof</span> {}); <span class="hljs-comment">// &#x7A7A;&#x5BF9;&#x8C61;&#x7684;&#x6253;&#x5370;&#x7ED3;&#x679C;&#xFF1A;object</span>
+</code></pre>
+<p>&#x4EE3;&#x7801;&#x89E3;&#x91CA;&#xFF1A;&#x8FD9;&#x91CC;&#x7684;&#x7A7A;&#x6570;&#x7EC4;<code>[]</code>&#x3001;&#x7A7A;&#x5BF9;&#x8C61;<code>{}</code> &#xFF0C;&#x4E3A;&#x5565;&#x4ED6;&#x4EEC;&#x5728;&#x4F7F;&#x7528; typeof &#x65F6;&#xFF0C;&#x8FD4;&#x56DE;&#x503C;&#x4E5F;&#x662F; <code>object</code>&#x5462;&#xFF1F;&#x56E0;&#x4E3A;&#x8FD9;&#x91CC;&#x7684; &#x8FD4;&#x56DE;&#x7ED3;&#x679C;<code>object</code>&#x6307;&#x7684;&#x662F;<strong>&#x5F15;&#x7528;&#x6570;&#x636E;&#x7C7B;&#x578B;</strong>&#x3002;&#x7A7A;&#x6570;&#x7EC4;&#x3001;&#x7A7A;&#x5BF9;&#x8C61;&#x90FD;&#x662F;<strong>&#x5F15;&#x7528;&#x6570;&#x636E;&#x7C7B;&#x578B; Object</strong>&#x3002;</p>
+<p>&#x56E0;&#x6B64;&#xFF0C;<strong>&#x5728;&#x4F7F;&#x7528;<code>typeof</code>&#x8FD0;&#x7B97;&#x7B26;&#x65F6;&#x91C7;&#x7528;&#x5F15;&#x7528;&#x7C7B;&#x578B;&#x5B58;&#x50A8;&#x503C;&#x4F1A;&#x51FA;&#x73B0;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x65E0;&#x8BBA;&#x5F15;&#x7528;&#x7684;&#x662F;&#x4EC0;&#x4E48;&#x7C7B;&#x578B;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x90FD;&#x4F1A;&#x8FD4;&#x56DE;<code>&quot;object&quot;</code>&#xFF0C;</strong>&#x8981;&#x60F3;&#x533A;&#x522B;&#x5185;&#x7F6E;&#x5BF9;&#x8C61;&#x5982;Array&#x3001;Date&#x7B49;&#xFF0C;&#x5355;&#x7EAF;&#x4F7F;&#x7528; typeof &#x662F;&#x4E0D;&#x884C;&#x7684;&#xFF0C;<strong>JavaScript&#x901A;&#x8FC7;<code>Object.prototype.toString</code>&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x68C0;&#x6D4B;&#x5BF9;&#x8C61;&#x7C7B;&#x578B;&#x3002;</strong></p>
+<blockquote>
+<p>&#x5C0F;&#x7ED3;&#xFF1A;</p>
+<p>&#x4F7F;&#x7528; typeof &#x6765;&#x5224;&#x65AD;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;&#x53EA;&#x80FD;&#x533A;&#x5206;&#x57FA;&#x672C;&#x7C7B;&#x578B;&#xFF0C;&#x5373; <code>&#x201C;number&#x201D;&#xFF0C;&#x201D;string&#x201D;&#xFF0C;&#x201D;undefined&#x201D;&#xFF0C;&#x201D;boolean&#x201D;&#xFF0C;&#x201D;object&#x201D;&#xFF0C;&#x201C;function&#x201D;</code>&#x516D;&#x79CD;&#x3002;</p>
+</blockquote>
+<h4 id="2&#x3001;objectprototypetostringcall">2&#x3001;Object.prototype.toString.call()</h4>
+<p>&#x6BCF;&#x4E2A;&#x5BF9;&#x8C61;&#x90FD;&#x6709;&#x4E00;&#x4E2A; <code>toString()</code> &#x65B9;&#x6CD5;&#xFF0C;&#x5F53;&#x8BE5;&#x5BF9;&#x8C61;&#x88AB;&#x8868;&#x793A;&#x4E3A;&#x4E00;&#x4E2A;&#x6587;&#x672C;&#x503C;&#x65F6;&#xFF0C;&#x6216;&#x8005;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x4EE5;&#x9884;&#x671F;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x65B9;&#x5F0F;&#x5F15;&#x7528;&#x65F6;&#x81EA;&#x52A8;&#x8C03;&#x7528;&#x3002;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;<code>toString()</code> &#x65B9;&#x6CD5;&#x88AB;&#x6BCF;&#x4E2A; <code>Object</code> &#x5BF9;&#x8C61;&#x7EE7;&#x627F;&#x3002;&#x5982;&#x679C;&#x6B64;&#x65B9;&#x6CD5;&#x5728;&#x81EA;&#x5B9A;&#x4E49;&#x5BF9;&#x8C61;&#x4E2D;&#x672A;&#x88AB;&#x8986;&#x76D6;&#xFF0C;<code>toString()</code> &#x8FD4;&#x56DE; &quot;[object <em>type</em>]&quot;&#xFF0C;&#x5176;&#x4E2D; <code>type</code> &#x662F;&#x5BF9;&#x8C61;&#x7684;&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>toString()</code> &#x6765;&#x83B7;&#x53D6;&#x6BCF;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x7C7B;&#x578B;&#x3002;&#x4E3A;&#x4E86;&#x6BCF;&#x4E2A;&#x5BF9;&#x8C61;&#x90FD;&#x80FD;&#x901A;&#x8FC7; <code>Object.prototype.toString()</code> &#x6765;&#x68C0;&#x6D4B;&#xFF0C;&#x9700;&#x8981;&#x4EE5; <code>Function.prototype.call()</code> &#x6216;&#x8005; <code>Function.prototype.apply()</code> &#x7684;&#x5F62;&#x5F0F;&#x6765;&#x8C03;&#x7528;&#xFF0C;&#x4F20;&#x9012;&#x8981;&#x68C0;&#x67E5;&#x7684;&#x5BF9;&#x8C61;&#x4F5C;&#x4E3A;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x79F0;&#x4E3A; <code>thisArg</code>&#x3002;</p>
+<h5 id="&#x539F;&#x578B;&#x94FE;&#x7684;&#x6982;&#x5FF5;">&#x539F;&#x578B;&#x94FE;&#x7684;&#x6982;&#x5FF5;</h5>
+<p>&#x6211;&#x4EEC;&#x90FD;&#x77E5;&#x9053;js&#x4E2D;&#x7684;&#x5BF9;&#x8C61;&#x90FD;&#x7EE7;&#x627F;&#x81EA;<code>Object</code>&#xFF0C;&#x6240;&#x4EE5;&#x5F53;&#x6211;&#x4EEC;&#x5728;&#x67D0;&#x4E2A;&#x5BF9;&#x8C61;&#x4E0A;&#x8C03;&#x7528;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x4F1A;&#x5148;&#x5728;&#x8BE5;&#x5BF9;&#x8C61;&#x4E0A;&#x8FDB;&#x884C;&#x67E5;&#x627E;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x627E;&#x5230;&#x5219;&#x4F1A;&#x8FDB;&#x5165;&#x5BF9;&#x8C61;&#x7684;&#x539F;&#x578B;&#xFF08;&#x4E5F;&#x5C31;&#x662F;<code>.prototype</code>&#xFF09;&#x8FDB;&#x884C;&#x67E5;&#x627E;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x627E;&#x5230;&#xFF0C;&#x540C;&#x6837;&#x7684;&#x4E5F;&#x4F1A;&#x8FDB;&#x5165;&#x5BF9;&#x8C61;&#x539F;&#x578B;&#x7684;&#x539F;&#x578B;&#x8FDB;&#x884C;&#x67E5;&#x627E;&#xFF0C;&#x76F4;&#x5230;&#x627E;&#x5230;&#x6216;&#x8005;&#x8FDB;&#x5165;&#x539F;&#x578B;&#x94FE;&#x7684;&#x9876;&#x7AEF;<code>Object.prototype</code>&#x624D;&#x4F1A;&#x505C;&#x6B62;&#x3002;</p>
+<p>&#x6240;&#x4EE5;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x4F7F;&#x7528;<code>arr.toString()</code>&#x65F6;&#xFF0C;&#x4E0D;&#x80FD;&#x8FDB;&#x884C;&#x590D;&#x6742;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x5224;&#x65AD;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x8C03;&#x7528;&#x7684;&#x662F;<code>Array.prototype.toString</code>&#xFF0C;&#x867D;&#x7136;<code>Array</code>&#x4E5F;&#x7EE7;&#x627F;&#x81EA;<code>Object</code>&#xFF0C;&#x4F46;js&#x5728;<code>Array.prototype</code>&#x4E0A;&#x91CD;&#x5199;&#x4E86;<code>toString</code>&#xFF0C;&#x800C;&#x6211;&#x4EEC;&#x901A;&#x8FC7;<code>toString.call(arr)</code>&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x901A;&#x8FC7;&#x539F;&#x578B;&#x94FE;&#x8C03;&#x7528;&#x4E86;<code>Object.prototype.toString</code>&#x3002;</p>
+<p>&#x5224;&#x65AD;&#x5BF9;&#x8C61;&#x7684;&#x7C7B;&#x578B;&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-string">&quot;tom&quot;</span>));<span class="hljs-comment">//[object String]</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-number">17</span>));<span class="hljs-comment">//[object Number]</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-literal">true</span>));<span class="hljs-comment">//[object Boolean]</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-literal">undefined</span>));<span class="hljs-comment">//[object Undefined]</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-literal">null</span>));<span class="hljs-comment">//[object Null]</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Object</span>.prototype.toString.call({name: <span class="hljs-string">&quot;tom&quot;</span>}));<span class="hljs-comment">//[object Object]</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{}));<span class="hljs-comment">//[object Function]</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Object</span>.prototype.toString.call([]));<span class="hljs-comment">//[object Array]</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>));<span class="hljs-comment">//[object Date]</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-regexp">/\d/</span>));<span class="hljs-comment">//[object RegExp]</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Person</span>(<span class="hljs-params"></span>)</span>{};
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-keyword">new</span> Person));<span class="hljs-comment">//[object Object]</span>
+<span class="hljs-comment">// &#x5224;&#x65AD;&#x539F;&#x751F;JSON&#x5BF9;&#x8C61;</span>
+<span class="hljs-keyword">var</span> isNativeJSON = <span class="hljs-built_in">window</span>.JSON &amp;&amp; <span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-built_in">JSON</span>);
+<span class="hljs-built_in">console</span>.log(isNativeJSON);<span class="hljs-comment">//&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x4E3A;&#xFF1A;[object JSON] &#xFF0C;&#x8BF4;&#x660E;JSON&#x662F;&#x539F;&#x751F;&#x7684;&#xFF0C;&#x5426;&#x5219;&#x4E0D;&#x662F;&#xFF1B;</span>
+</code></pre>
+<p>&#x5BF9;&#x4E8E;&#x81EA;&#x5B9A;&#x4E49;&#x7C7B;&#x578B;&#xFF0C;<code>Object.prototype.toString</code>&#x65B9;&#x6CD5;&#x4E0D;&#x80FD;&#x51C6;&#x786E;&#x5224;&#x65AD;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#x662F;&#x5426;&#x5C5E;&#x4E8E;&#x67D0;&#x79CD;&#x7C7B;&#x578B;&#xFF0C;&#x56E0;&#x6B64;&#x5F15;&#x5165;<strong><code>instanceof</code></strong> <strong>&#x8FD0;&#x7B97;&#x7B26;</strong>&#x8FDB;&#x884C;&#x5224;&#x65AD;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">//&#x81EA;&#x5B9A;&#x4E49;&#x7C7B;&#x578B;</span>
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Person</span>(<span class="hljs-params">name, age</span>) </span>{
+      <span class="hljs-keyword">this</span>.name = name;
+      <span class="hljs-keyword">this</span>.age = age;
+  }
+  <span class="hljs-keyword">var</span> person = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">&quot;Rose&quot;</span>, <span class="hljs-number">18</span>);
+  <span class="hljs-built_in">Object</span>.prototype.toString.call(person); <span class="hljs-comment">// &#x6253;&#x5370; &quot;[object Object]&quot;</span>
+    <span class="hljs-built_in">console</span>.log(person <span class="hljs-keyword">instanceof</span> Person); <span class="hljs-comment">// &#x6253;&#x5370; true</span>
+</code></pre>
+<blockquote>
+<p>&#x53C2;&#x8003;&#x5F15;&#x7528;&#xFF1A;</p>
+<p><a href="https://blog.csdn.net/qq_39408204/article/details/91492061" target="_blank">Object.prototype.toString.call(obj)&#x7CBE;&#x786E;&#x5224;&#x65AD;&#x5BF9;&#x8C61;&#x7684;&#x7C7B;&#x578B;</a></p>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/toString" target="_blank">MDN | Object.prototype.toString()</a></p>
+</blockquote>
+<h4 id="3&#x3001;instanceof">3&#x3001;instanceof</h4>
+<p><strong><code>instanceof</code></strong> <strong>&#x8FD0;&#x7B97;&#x7B26;</strong>&#x7528;&#x4E8E;&#x68C0;&#x6D4B;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684; <code>prototype</code> &#x5C5E;&#x6027;&#x662F;&#x5426;&#x51FA;&#x73B0;&#x5728;&#x67D0;&#x4E2A;&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;&#x7684;&#x539F;&#x578B;&#x94FE;&#x3002;</p>
+<p><em>&#x539F;&#x7406;</em>&#xFF1A;&#x5224;&#x65AD;&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;&#x7684;<strong>proto</strong>&#x5C5E;&#x6027;&#x4E0E;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684; prototype &#x662F;&#x4E0D;&#x662F;&#x7528;&#x4E00;&#x4E2A;&#x5F15;&#x7528;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x662F;&#xFF0C;&#x4ED6;&#x4F1A;&#x6CBF;&#x7740;&#x5BF9;&#x8C61;&#x7684;<strong>proto</strong>&#x5411;&#x4E0A;&#x67E5;&#x627E;&#x7684;&#xFF0C;&#x76F4;&#x5230;&#x9876;&#x7AEF; Object&#x3002;</p>
+<p>&#x901A;&#x5E38;&#x6765;&#x8BB2;&#xFF0C;&#x4F7F;&#x7528; instanceof &#x5C31;&#x662F;&#x5224;&#x65AD;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#x662F;&#x5426;&#x5C5E;&#x4E8E;&#x67D0;&#x79CD;&#x7C7B;&#x578B;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// &#x5224;&#x65AD; foo &#x662F;&#x5426;&#x662F; Foo &#x7C7B;&#x7684;&#x5B9E;&#x4F8B;</span>
+ <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Foo</span>(<span class="hljs-params"></span>)</span>{};
+ <span class="hljs-keyword">var</span> foo = <span class="hljs-keyword">new</span> Foo();
+ <span class="hljs-built_in">console</span>.log(foo <span class="hljs-keyword">instanceof</span> Foo) <span class="hljs-comment">// &#x8F93;&#x51FA; true</span>
+</code></pre>
+<p>&#x66F4;&#x91CD;&#x8981;&#x7684;&#x4E00;&#x70B9;&#x662F; <strong>instanceof &#x53EF;&#x4EE5;&#x5728;&#x7EE7;&#x627F;&#x5173;&#x7CFB;&#x4E2D;&#x7528;&#x6765;&#x5224;&#x65AD;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#x662F;&#x5426;&#x5C5E;&#x4E8E;&#x5B83;&#x7684;&#x7236;&#x7C7B;&#x578B;</strong>&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// &#x5224;&#x65AD; foo &#x662F;&#x5426;&#x662F; Foo &#x7C7B;&#x7684;&#x5B9E;&#x4F8B; , &#x5E76;&#x4E14;&#x662F;&#x5426;&#x662F;&#x5176;&#x7236;&#x7C7B;&#x578B;&#x7684;&#x5B9E;&#x4F8B;</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Aoo</span>(<span class="hljs-params"></span>)</span>{}
+ <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Foo</span>(<span class="hljs-params"></span>)</span>{}
+ Foo.prototype = <span class="hljs-keyword">new</span> Aoo(); <span class="hljs-comment">// JavaScript &#x539F;&#x578B;&#x7EE7;&#x627F;</span>
+ <span class="hljs-keyword">var</span> foo = <span class="hljs-keyword">new</span> Foo();
+ <span class="hljs-built_in">console</span>.log(foo <span class="hljs-keyword">instanceof</span> Foo) <span class="hljs-comment">// &#x8F93;&#x51FA; true</span>
+ <span class="hljs-built_in">console</span>.log(foo <span class="hljs-keyword">instanceof</span> Aoo) <span class="hljs-comment">// &#x8F93;&#x51FA; true</span>
+</code></pre>
+<p>&#x5728;&#x591A;&#x5C42;&#x7EE7;&#x627F;&#x5173;&#x7CFB;&#x4E2D;&#xFF0C;instanceof &#x8FD0;&#x7B97;&#x7B26;&#x540C;&#x6837;&#x9002;&#x7528;&#x3002;</p>
+<h5 id="instanceof-&#x590D;&#x6742;&#x7528;&#x6CD5;&#xFF08;javascript-&#x539F;&#x578B;&#x7EE7;&#x627F;&#x673A;&#x5236;&#xFF09;">instanceof &#x590D;&#x6742;&#x7528;&#x6CD5;&#xFF08;JavaScript &#x539F;&#x578B;&#x7EE7;&#x627F;&#x673A;&#x5236;&#xFF09;</h5>
+<p>instanceof&#x68C0;&#x6D4B;&#x7684;&#x662F;&#x539F;&#x578B;&#xFF0C;&#x7528;&#x4E00;&#x6BB5;&#x4EE3;&#x7801;&#x6A21;&#x62DF;&#x4E00;&#x4E0B;&#x5185;&#x90E8;&#x6267;&#x884C;&#x8FC7;&#x7A0B;&#xFF1A;</p>
+<pre><code class="lang-JS"><span class="hljs-keyword">instanceof</span> (A,B) = {
+    <span class="hljs-keyword">var</span> L = A.__proto__;
+    <span class="hljs-keyword">var</span> R = B.prototype;
+    <span class="hljs-keyword">if</span>(L === R) {
+        <span class="hljs-comment">//A&#x7684;&#x5185;&#x90E8;&#x5C5E;&#x6027;__proto__&#x6307;&#x5411;B&#x7684;&#x539F;&#x578B;&#x5BF9;&#x8C61;</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+}
+</code></pre>
+<p>&#x4EE5;&#x4E0B;&#x4E3A;&#x51E0;&#x4E2A;&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-built_in">console</span>.log([] <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">Array</span>); <span class="hljs-comment">// true</span>
+<span class="hljs-built_in">console</span>.log([] <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">Object</span>) <span class="hljs-comment">// true</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Object</span> <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">Object</span>);<span class="hljs-comment">//true</span>
+ <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Function</span> <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">Function</span>);<span class="hljs-comment">//true</span>
+ <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Function</span> <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">Object</span>);<span class="hljs-comment">//true</span>
+ <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Number</span> <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">Number</span>);<span class="hljs-comment">//false</span>
+ <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">String</span> <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">String</span>);<span class="hljs-comment">//false</span>
+ <span class="hljs-built_in">console</span>.log(Foo <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">Function</span>);<span class="hljs-comment">//true</span>
+</code></pre>
+<p>&#x4ECE;&#x4E0A;&#x8FB9;&#x7684;&#x793A;&#x4F8B;&#x53EF;&#x4EE5;&#x53D1;&#x73B0;&#xFF0C;&#x867D;&#x7136; instanceof &#x80FD;&#x591F;&#x5224;&#x65AD;&#x51FA; [ ] &#x662F;Array&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x4F46;&#x5B83;&#x8BA4;&#x4E3A; [ ] &#x4E5F;&#x662F;Object&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x4ECE; instanceof &#x80FD;&#x591F;&#x5224;&#x65AD;&#x51FA; <code>[].__proto__</code>&#x6307;&#x5411; <code>Array.prototype</code>&#xFF0C;&#x800C; <code>Array.prototype.__proto__</code> &#x53C8;&#x6307;&#x5411;&#x4E86;<code>Object.prototype</code>&#xFF0C;&#x6700;&#x7EC8; <code>Object.prototype.__proto__</code> &#x6307;&#x5411;&#x4E86;null&#xFF0C;&#x6807;&#x5FD7;&#x7740;&#x539F;&#x578B;&#x94FE;&#x7684;&#x7ED3;&#x675F;&#x3002;&#x56E0;&#x6B64;&#xFF0C;[]&#x3001;Array&#x3001;Object &#x5C31;&#x5728;&#x5185;&#x90E8;&#x5F62;&#x6210;&#x4E86;&#x4E00;&#x6761;&#x539F;&#x578B;&#x94FE;&#x3002;</p>
+<h5 id="javascript-&#x539F;&#x578B;&#x94FE;">JavaScript &#x539F;&#x578B;&#x94FE;</h5>
+<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlly1ghky0p5tmuj30fu0jpaem.jpg" alt="JavaScript &#x539F;&#x578B;&#x94FE;"></p>
+<p>&#x56E0;&#x6B64;&#xFF0C;==instanceof &#x53EA;&#x80FD;&#x7528;&#x6765;&#x5224;&#x65AD;&#x4E24;&#x4E2A;&#x5BF9;&#x8C61;&#x662F;&#x5426;&#x5C5E;&#x4E8E;&#x5B9E;&#x4F8B;&#x5173;&#x7CFB;&#xFF0C; &#x800C;&#x4E0D;&#x80FD;&#x5224;&#x65AD;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;&#x5177;&#x4F53;&#x5C5E;&#x4E8E;&#x54EA;&#x79CD;&#x7C7B;&#x578B;&#x3002;==</p>
+<p>&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x811A;&#x672C;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x5728;&#x591A;&#x4E2A;&#x7A97;&#x53E3;&#x4E4B;&#x95F4;&#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#x3002;&#x591A;&#x4E2A;&#x7A97;&#x53E3;&#x610F;&#x5473;&#x7740;&#x591A;&#x4E2A;&#x5168;&#x5C40;&#x73AF;&#x5883;&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x5168;&#x5C40;&#x73AF;&#x5883;&#x62E5;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x5168;&#x5C40;&#x5BF9;&#x8C61;&#xFF0C;&#x4ECE;&#x800C;&#x62E5;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x5185;&#x7F6E;&#x7C7B;&#x578B;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;&#x8FD9;&#x53EF;&#x80FD;&#x4F1A;&#x5F15;&#x53D1;&#x4E00;&#x4E9B;&#x95EE;&#x9898;&#x3002;&#x6BD4;&#x5982;&#xFF0C;&#x8868;&#x8FBE;&#x5F0F; <code>[] instanceof window.frames[0].Array</code> &#x4F1A;&#x8FD4;&#x56DE; <code>false</code>&#xFF0C;&#x56E0;&#x4E3A; <code>Array.prototype !== window.frames[0].Array.prototype</code>&#xFF0C;&#x5E76;&#x4E14;&#x6570;&#x7EC4;&#x4ECE;&#x524D;&#x8005;&#x7EE7;&#x627F;&#x3002;</p>
+<p>&#x5F53;&#x4F60;&#x5728;&#x4F60;&#x7684;&#x811A;&#x672C;&#x4E2D;&#x5F00;&#x59CB;&#x5904;&#x7406;&#x591A;&#x4E2A; frame &#x6216;&#x591A;&#x4E2A; window &#x4EE5;&#x53CA;&#x901A;&#x8FC7;&#x51FD;&#x6570;&#x5C06;&#x5BF9;&#x8C61;&#x4ECE;&#x4E00;&#x4E2A;&#x7A97;&#x53E3;&#x4F20;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x7A97;&#x53E3;&#x65F6;&#xFF0C;&#x6BD4;&#x5982;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4F7F;&#x7528;<code>Array.isArray(myObj)</code> &#x6216;&#x8005;<code>Object.prototype.toString.call(myObj) === &quot;[object Array]&quot;</code> &#x6765;&#x5B89;&#x5168;&#x7684;&#x68C0;&#x6D4B;&#x4F20;&#x8FC7;&#x6765;&#x7684;&#x5BF9;&#x8C61;&#x662F;&#x5426;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x3002;</p>
+<p>&#x652F;&#x6301; Array.isArray()&#x65B9;&#x6CD5;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x6709; IE9+&#x3001; Firefox 4+&#x3001; Safari 5+&#x3001; Opera 10.5+&#x548C; Chrome&#x3002;</p>
+<p>&#x5F53;&#x68C0;&#x6D4B;Array&#x5B9E;&#x4F8B;&#x65F6;, <code>Array.isArray</code> &#x4F18;&#x4E8E; <code>instanceof</code>,&#x56E0;&#x4E3A;Array.isArray&#x80FD;&#x68C0;&#x6D4B;<code>iframes</code>&#x3002;</p>
+<blockquote>
+<p>&#x53C2;&#x8003;&#x5F15;&#x7528;&#xFF1A;</p>
+<p><a href="https://developer.ibm.com/zh/articles/1306-jiangjj-jsinstanceof/" target="_blank">JavaScript instanceof &#x8FD0;&#x7B97;&#x7B26;&#x6DF1;&#x5165;&#x5256;&#x6790;</a></p>
+<p><a href="https://www.jianshu.com/p/3956a2204644" target="_blank">instanceof&#x8BE6;&#x89E3;</a></p>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/instanceof" target="_blank">MDN | instanceof&#x3001;<strong>Array.isArray()</strong> </a></p>
+</blockquote>
+<h4 id="4&#x3001;constructor">4&#x3001;constructor</h4>
+<p>constructor &#x5C5E;&#x6027;&#x8FD4;&#x56DE;&#x5BF9;&#x521B;&#x5EFA;&#x6B64;&#x5BF9;&#x8C61;&#x7684;&#x6570;&#x7EC4;&#x51FD;&#x6570;&#x7684;&#x5F15;&#x7528;&#x3002;</p>
+<h5 id="&#x8BED;&#x6CD5;&#xFF1A;">&#x8BED;&#x6CD5;&#xFF1A;</h5>
+<pre><code class="lang-js">object.constructor
+</code></pre>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Person</span>(<span class="hljs-params"></span>)</span>{
+  <span class="hljs-keyword">this</span>.name = name;
+}
+<span class="hljs-keyword">var</span> p = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">&apos;Joe&apos;</span>);
+<span class="hljs-built_in">console</span>.log(p.constructor === Person); <span class="hljs-comment">//true</span>
+<span class="hljs-built_in">console</span>.log(p.__proto__ === Person.prototype); <span class="hljs-comment">//true</span>
+</code></pre>
+<blockquote>
+<p><a href="https://www.cnblogs.com/ihardcoder/p/3667739.html" target="_blank">https://www.cnblogs.com/ihardcoder/p/3667739.html</a>  &#x6709;&#x5F85;&#x9A8C;&#x8BC1;</p>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="原始值和引用值类型及区别.html" class="navigation navigation-prev " aria-label="Previous page: 原始值和引用值类型及区别">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="类数组与数组的区别与转换.html" class="navigation navigation-next " aria-label="Next page: 类数组与数组的区别与转换">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"判断数据类型及方法对比","level":"1.2.3.2","depth":3,"next":{"title":"类数组与数组的区别与转换","level":"1.2.3.3","depth":3,"path":"类数组与数组的区别与转换.md","ref":"类数组与数组的区别与转换.md","articles":[]},"previous":{"title":"原始值和引用值类型及区别","level":"1.2.3.1","depth":3,"path":"原始值和引用值类型及区别.md","ref":"原始值和引用值类型及区别.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"判断数据类型及方法对比.md","mtime":"2020-08-28T14:44:02.944Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-28T14:11:03.889Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
