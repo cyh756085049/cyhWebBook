@@ -1,0 +1,1685 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>DOM事件 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Promise.html" />
+    
+    
+    <link rel="prev" href="bind、call、apply的区别.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    前端知识
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="HTML.html">
+            
+                <a href="HTML.html">
+            
+                    
+                    HTML(HTML5)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="HTML 语义化.html">
+            
+                <a href="HTML 语义化.html">
+            
+                    
+                    HTML 语义化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="浏览器内核的理解.html">
+            
+                <a href="浏览器内核的理解.html">
+            
+                    
+                    浏览器内核的理解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="CSS.html">
+            
+                <a href="CSS.html">
+            
+                    
+                    CSS(CSS3)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="CSS盒子模型及其理解.html">
+            
+                <a href="CSS盒子模型及其理解.html">
+            
+                    
+                    CSS盒子模型及其理解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="未知宽高元素水平垂直居中（方案及比较）.html">
+            
+                <a href="未知宽高元素水平垂直居中（方案及比较）.html">
+            
+                    
+                    未知宽高元素水平垂直居中(方案及比较)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="BOM和DOM.html">
+            
+                <a href="BOM和DOM.html">
+            
+                    
+                    BOM和DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="offset、client与scroll的区别.html">
+            
+                <a href="offset、client与scroll的区别.html">
+            
+                    
+                    offset、client与scroll的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="JavaScript.html">
+            
+                <a href="JavaScript.html">
+            
+                    
+                    JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="原始值和引用值类型及区别.html">
+            
+                <a href="原始值和引用值类型及区别.html">
+            
+                    
+                    原始值和引用值类型及区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="判断数据类型及方法对比.html">
+            
+                <a href="判断数据类型及方法对比.html">
+            
+                    
+                    判断数据类型及方法对比
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="类数组与数组的区别与转换.html">
+            
+                <a href="类数组与数组的区别与转换.html">
+            
+                    
+                    类数组与数组的区别与转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="闭包及其作用.html">
+            
+                <a href="闭包及其作用.html">
+            
+                    
+                    闭包及其作用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="浏览器渲染机制.html">
+            
+                <a href="浏览器渲染机制.html">
+            
+                    
+                    浏览器渲染机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.6" data-path="this 的指向.html">
+            
+                <a href="this 的指向.html">
+            
+                    
+                    this 的指向
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.7" data-path="原型和原型链.html">
+            
+                <a href="原型和原型链.html">
+            
+                    
+                    原型和原型链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.8" data-path="EventLoop事件循环.html">
+            
+                <a href="EventLoop事件循环.html">
+            
+                    
+                    EventLoop事件循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.9" data-path="作用域和作用域链、执行期上下文.html">
+            
+                <a href="作用域和作用域链、执行期上下文.html">
+            
+                    
+                    作用域和作用域链、执行期上下文
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.10" data-path="深拷贝与浅拷贝.html">
+            
+                <a href="深拷贝与浅拷贝.html">
+            
+                    
+                    深拷贝与浅拷贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.11" data-path="面向对象.html">
+            
+                <a href="面向对象.html">
+            
+                    
+                    面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12" data-path="数组的常见API.html">
+            
+                <a href="数组的常见API.html">
+            
+                    
+                    数组的常见API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.13" data-path="Ajax.html">
+            
+                <a href="Ajax.html">
+            
+                    
+                    Ajax及同源策略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.14" data-path="跨域通信.html">
+            
+                <a href="跨域通信.html">
+            
+                    
+                    跨域通信
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.15" data-path="bind、call、apply的区别.html">
+            
+                <a href="bind、call、apply的区别.html">
+            
+                    
+                    bind、call、apply的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3.16" data-path="DOM事件.html">
+            
+                <a href="DOM事件.html">
+            
+                    
+                    DOM事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.17" data-path="Promise.html">
+            
+                <a href="Promise.html">
+            
+                    
+                    Promise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.18" data-path="防抖和节流.html">
+            
+                <a href="防抖和节流.html">
+            
+                    
+                    防抖和节流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.19" data-path="JS的垃圾回收机制.html">
+            
+                <a href="JS的垃圾回收机制.html">
+            
+                    
+                    JS的垃圾回收机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.20" data-path="函数式编程compose.html">
+            
+                <a href="函数式编程compose.html">
+            
+                    
+                    函数式编程compose
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.21" data-path="继承的实现方式及比较.html">
+            
+                <a href="继承的实现方式及比较.html">
+            
+                    
+                    继承的实现方式及比较
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.22" data-path="浏览器内核线程.html">
+            
+                <a href="浏览器内核线程.html">
+            
+                    
+                    浏览器内核线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.23" data-path="前端笔试总结.html">
+            
+                <a href="前端笔试总结.html">
+            
+                    
+                    前端笔试总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.24" data-path="cookies、sessionStorage和localStorage的区别.html">
+            
+                <a href="cookies、sessionStorage和localStorage的区别.html">
+            
+                    
+                    cookies、sessionStorage和localStorage的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.25" data-path="package.json、package-lock.json区别.html">
+            
+                <a href="package.json、package-lock.json区别.html">
+            
+                    
+                    package.json、package-lock.json区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="ES6.html">
+            
+                <a href="ES6.html">
+            
+                    
+                    ES6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" >
+            
+                <span>
+            
+                    
+                    JQuery
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="NodeJS.html">
+            
+                <a href="NodeJS.html">
+            
+                    
+                    NodeJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="Web安全.html">
+            
+                <a href="Web安全.html">
+            
+                    
+                    Web安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" >
+            
+                <span>
+            
+                    
+                    浏览器
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="前端工程化.html">
+            
+                <a href="前端工程化.html">
+            
+                    
+                    前端工程化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" >
+            
+                <span>
+            
+                    
+                    性能优化
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="手撕代码.html">
+            
+                <a href="手撕代码.html">
+            
+                    
+                    算法编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.11.1" data-path="剑指offer算法.html">
+            
+                <a href="剑指offer算法.html">
+            
+                    
+                    剑指Offer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    MongoDB
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="数据可视化.html">
+            
+                <a href="数据可视化.html">
+            
+                    
+                    数据可视化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    计算机基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="HTTP与计算机网络.html">
+            
+                <a href="HTTP与计算机网络.html">
+            
+                    
+                    计算机网络
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="Cookie与Session.html">
+            
+                <a href="Cookie与Session.html">
+            
+                    
+                    Cookie与Session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="URL和URI.html">
+            
+                <a href="URL和URI.html">
+            
+                    
+                    URL和URI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="在浏览器中输入URL到页面渲染的整个过程.html">
+            
+                <a href="在浏览器中输入URL到页面渲染的整个过程.html">
+            
+                    
+                    在浏览器中输入URL到页面渲染的整个过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="TCP与UDP区别.html">
+            
+                <a href="TCP与UDP区别.html">
+            
+                    
+                    TCP与UDP区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.5" data-path="TCP/IP协议分层管理.md">
+            
+                <span>
+            
+                    
+                    TCP/IP协议分层管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.6" data-path="TCPIP通信传输流.html">
+            
+                <a href="TCPIP通信传输流.html">
+            
+                    
+                    TCP/IP通信传输流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.7" data-path="HTTPS与HTTP区别及实现方式.html">
+            
+                <a href="HTTPS与HTTP区别及实现方式.html">
+            
+                    
+                    HTTPS与HTTP区别及实现方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.8" data-path="HTTP1.1和HTTP1.0、HTTP2的区别.html">
+            
+                <a href="HTTP1.1和HTTP1.0、HTTP2的区别.html">
+            
+                    
+                    HTTP1.1和HTTP1.0、HTTP2的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.9" data-path="HTTP方法.html">
+            
+                <a href="HTTP方法.html">
+            
+                    
+                    HTTP方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.10" data-path="GET和POST的区别.html">
+            
+                <a href="GET和POST的区别.html">
+            
+                    
+                    GET和POST的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.11" data-path="HTTP建立持久连接的意义.html">
+            
+                <a href="HTTP建立持久连接的意义.html">
+            
+                    
+                    HTTP建立持久连接的意义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.12" data-path="HTTP报文的结构.html">
+            
+                <a href="HTTP报文的结构.html">
+            
+                    
+                    HTTP报文的结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.13" data-path="HTTP状态码.html">
+            
+                <a href="HTTP状态码.html">
+            
+                    
+                    HTTP状态码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.14" data-path="HTTP报文首部.html">
+            
+                <a href="HTTP报文首部.html">
+            
+                    
+                    HTTP报文首部字段
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.15" data-path="对Websocket的了解.html">
+            
+                <a href="对Websocket的了解.html">
+            
+                    
+                    对Websocket的了解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.16" data-path="Cookie相关首部字段.html">
+            
+                <a href="Cookie相关首部字段.html">
+            
+                    
+                    Cookie相关首部字段
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.17" >
+            
+                <span>
+            
+                    
+                    Web服务器及其组成
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.18" >
+            
+                <span>
+            
+                    
+                    基于HTTP的功能追加协议（SPY、WebSocket、HTTP）
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="数据可视化.html">
+            
+                <a href="数据可视化.html">
+            
+                    
+                    操作系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="进程和线程.html">
+            
+                <a href="进程和线程.html">
+            
+                    
+                    进程和线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="进程调度算法.html">
+            
+                <a href="进程调度算法.html">
+            
+                    
+                    进程调度算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" >
+            
+                <span>
+            
+                    
+                    数据结构
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" >
+            
+                <span>
+            
+                    
+                    算法
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    数据库
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    前端框架及工具
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="Vue.html">
+            
+                <a href="Vue.html">
+            
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="React.html">
+            
+                <a href="React.html">
+            
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" >
+            
+                <span>
+            
+                    
+                    AngularJS
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" >
+            
+                <span>
+            
+                    
+                    Webpack
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" >
+            
+                <span>
+            
+                    
+                    TypeScript
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" >
+            
+                <span>
+            
+                    
+                    Element UI
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" >
+            
+                <span>
+            
+                    
+                    Bootstrap
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    秋招整理
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="腾讯前端面经.html">
+            
+                <a href="腾讯前端面经.html">
+            
+                    
+                    腾讯面经
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="前端笔试总结.html">
+            
+                <a href="前端笔试总结.html">
+            
+                    
+                    笔经整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="开放问题.html">
+            
+                <a href="开放问题.html">
+            
+                    
+                    开放问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >DOM事件</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="dom&#x4E8B;&#x4EF6;">DOM&#x4E8B;&#x4EF6;</h2>
+<blockquote>
+<p>DOM&#x4E8B;&#x4EF6;&#x7684;&#x7EA7;&#x522B;</p>
+<p>DOM&#x4E8B;&#x4EF6;&#x6A21;&#x578B;</p>
+<p>DOM&#x4E8B;&#x4EF6;&#x6D41;</p>
+<p>DOM&#x4E8B;&#x4EF6;&#x6355;&#x83B7;&#x7684;&#x5177;&#x4F53;&#x6D41;&#x7A0B;</p>
+<p>Event&#x5BF9;&#x8C61;&#x7684;&#x5E38;&#x89C1;&#x5E94;&#x7528;&#xFF08;Event&#x7684;&#x5E38;&#x7528;api&#x65B9;&#x6CD5;&#xFF09;</p>
+<p>&#x81EA;&#x5B9A;&#x4E49;&#x4E8B;&#x4EF6;</p>
+<p>&#x4E8B;&#x4EF6;&#x59D4;&#x6258;</p>
+</blockquote>
+<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlly1gibnr17bgkj30u10u0ag9.jpg" alt="&#x622A;&#x5C4F;2020-09-0201.21.05"></p>
+<h3 id="dom&#x4E8B;&#x4EF6;&#x7684;&#x7EA7;&#x522B;">DOM&#x4E8B;&#x4EF6;&#x7684;&#x7EA7;&#x522B;</h3>
+<p>DOM&#x4E8B;&#x4EF6;&#x7684;&#x7EA7;&#x522B;&#xFF0C;&#x51C6;&#x786E;&#x6765;&#x8BF4;&#xFF0C;&#x662F;<strong>DOM&#x6807;&#x51C6;</strong>&#x5B9A;&#x4E49;&#x7684;&#x7EA7;&#x522B;&#x3002;&#x5305;&#x62EC;&#xFF1A;</p>
+<h4 id="dom0">DOM0</h4>
+<pre><code class="lang-js">element.onclick = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{ 
+  <span class="hljs-comment">// TODO  </span>
+}
+</code></pre>
+<h4 id="dom2">DOM2</h4>
+<h5 id="addeventlistener&#xFF08;&#x9AD8;&#x7248;&#x672C;&#x6D4F;&#x89C8;&#x5668;&#xFF09;">addEventListener&#xFF08;&#x9AD8;&#x7248;&#x672C;&#x6D4F;&#x89C8;&#x5668;&#xFF09;</h5>
+<pre><code class="lang-js">element.addEventListener(<span class="hljs-string">&apos;click&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{ 
+    <span class="hljs-comment">// TODO</span>
+}, <span class="hljs-literal">false</span>);
+</code></pre>
+<p>&#x53C2;&#x6570;&#x89E3;&#x91CA;&#xFF1A;</p>
+<ul>
+<li>&#x53C2;&#x6570;1&#xFF1A;&#x4E8B;&#x4EF6;&#x540D;&#x7684;&#x5B57;&#x7B26;&#x4E32;(&#x6CE8;&#x610F;&#xFF0C;&#x6CA1;&#x6709;on)</li>
+<li>&#x53C2;&#x6570;2&#xFF1A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF1A;&#x5F53;&#x4E8B;&#x4EF6;&#x89E6;&#x53D1;&#x65F6;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x4F1A;&#x88AB;&#x6267;&#x884C;</li>
+<li>&#x53C2;&#x6570;3&#xFF1A;<strong>true&#x8868;&#x793A;&#x6355;&#x83B7;&#x9636;&#x6BB5;&#x89E6;&#x53D1;&#xFF0C;false&#x8868;&#x793A;&#x5192;&#x6CE1;&#x9636;&#x6BB5;&#x89E6;&#x53D1;&#xFF08;&#x9ED8;&#x8BA4;&#xFF09;</strong>&#x3002;&#x5982;&#x679C;&#x4E0D;&#x5199;&#xFF0C;&#x5219;&#x9ED8;&#x8BA4;&#x4E3A;false&#x3002;</li>
+</ul>
+<h6 id="&#x793A;&#x4F8B;&#xFF1A;">&#x793A;&#x4F8B;&#xFF1A;</h6>
+<pre><code class="lang-js">&lt;body&gt;
+&lt;button&gt;&#x6309;&#x94AE;&lt;/button&gt;
+&lt;script&gt;
+    var btn = document.getElementsByTagName(&quot;button&quot;)[0];
+    btn.addEventListener(&quot;click&quot;, fn1);
+    btn.addEventListener(&quot;click&quot;, fn2);
+    function fn1() {
+        console.log(&quot;&#x4E8B;&#x4EF6;1&quot;);
+    }
+    function fn2() {
+        console.log(&quot;&#x4E8B;&#x4EF6;2&quot;);
+    }
+&lt;/script&gt;
+&lt;/body&gt;
+// &#x8F93;&#x51FA;&#xFF1A; &#x4E8B;&#x4EF6;1
+//       &#x4E8B;&#x4EF6;2
+</code></pre>
+<p><code>addEventListener()</code>&#x8FD9;&#x79CD;&#x7ED1;&#x5B9A;&#x4E8B;&#x4EF6;&#x7684;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<ul>
+<li><p>&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x4E00;&#x4E2A;&#x4E8B;&#x4EF6;&#xFF0C;&#x53EF;&#x4EE5;&#x7ED1;&#x5B9A;&#x591A;&#x4E2A;&#x54CD;&#x5E94;&#x51FD;&#x6570;&#x3002;<strong>&#x4E0D;&#x5B58;&#x5728;&#x54CD;&#x5E94;&#x51FD;&#x6570;&#x88AB;&#x8986;&#x76D6;&#x7684;&#x60C5;&#x51B5;</strong>&#x3002;&#x6267;&#x884C;&#x987A;&#x5E8F;&#x662F;&#xFF1A;<strong>&#x4E8B;&#x4EF6;&#x88AB;&#x89E6;&#x53D1;&#x65F6;&#xFF0C;&#x54CD;&#x5E94;&#x51FD;&#x6570;&#x4F1A;&#x6309;&#x7167;&#x51FD;&#x6570;&#x7684;&#x7ED1;&#x5B9A;&#x987A;&#x5E8F;&#x6267;&#x884C;&#x3002;</strong></p>
+</li>
+<li><p><strong>addEventListener()&#x4E2D;&#x7684;this&#xFF0C;&#x662F;&#x7ED1;&#x5B9A;&#x4E8B;&#x4EF6;&#x7684;&#x5BF9;&#x8C61;</strong>&#x3002;</p>
+</li>
+<li><code>addEventListener()</code>&#x4E0D;&#x652F;&#x6301; IE8 &#x53CA;&#x4EE5;&#x4E0B;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x3002;&#x5728;IE8&#x4E2D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>attachEvent</code>&#x6765;&#x7ED1;&#x5B9A;&#x4E8B;&#x4EF6;&#x3002;</li>
+</ul>
+<h5 id="attachevent&#xFF08;ie8&#x53CA;&#x4EE5;&#x4E0B;&#x7248;&#x672C;&#x6D4F;&#x89C8;&#x5668;&#xFF09;">attachEvent&#xFF08;IE8&#x53CA;&#x4EE5;&#x4E0B;&#x7248;&#x672C;&#x6D4F;&#x89C8;&#x5668;&#xFF09;</h5>
+<pre><code class="lang-javascript">element.attachEvent(<span class="hljs-string">&apos;onclick&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">// TODO</span>
+});
+</code></pre>
+<p>&#x53C2;&#x6570;&#x89E3;&#x91CA;&#xFF1A;</p>
+<ul>
+<li><p>&#x53C2;&#x6570;1&#xFF1A;&#x4E8B;&#x4EF6;&#x540D;&#x7684;&#x5B57;&#x7B26;&#x4E32;(&#x6CE8;&#x610F;&#xFF0C;&#x6709;on)</p>
+</li>
+<li><p>&#x53C2;&#x6570;2&#xFF1A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF1A;&#x5F53;&#x4E8B;&#x4EF6;&#x89E6;&#x53D1;&#x65F6;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x4F1A;&#x88AB;&#x6267;&#x884C;</p>
+</li>
+</ul>
+<h6 id="&#x793A;&#x4F8B;&#xFF1A;">&#x793A;&#x4F8B;&#xFF1A;</h6>
+<pre><code class="lang-js">&lt;body&gt;
+  &lt;button&gt;&#x6309;&#x94AE;&lt;/button&gt;
+&lt;script&gt;
+  var btn = document.getElementsByTagName(&apos;button&apos;)[0];
+  btn.attachEvent(&apos;onclick&apos;, function() {
+    console.log(&apos;&#x4E8B;&#x4EF6;1&apos;);
+  });
+
+  btn.attachEvent(&apos;onclick&apos;, function() {
+    console.log(&apos;&#x4E8B;&#x4EF6;2&apos;);
+  });
+&lt;/script&gt;
+&lt;/body&gt;
+// &#x8F93;&#x51FA;&#xFF1A;&#x4E8B;&#x4EF6;2
+//      &#x4E8B;&#x4EF6;1
+</code></pre>
+<p><code>attachEvent()</code>&#x8FD9;&#x79CD;&#x7ED1;&#x5B9A;&#x4E8B;&#x4EF6;&#x7684;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<ul>
+<li><p>&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x4E00;&#x4E2A;&#x4E8B;&#x4EF6;&#xFF0C;&#x53EF;&#x4EE5;&#x7ED1;&#x5B9A;&#x591A;&#x4E2A;&#x54CD;&#x5E94;&#x51FD;&#x6570;&#x3002;<strong>&#x4E0D;&#x5B58;&#x5728;&#x54CD;&#x5E94;&#x51FD;&#x6570;&#x88AB;&#x8986;&#x76D6;&#x7684;&#x60C5;&#x51B5;</strong>&#x3002;<strong>&#x6CE8;&#x610F;</strong>&#xFF1A;&#x6267;&#x884C;&#x987A;&#x5E8F;&#x662F;&#xFF0C;&#x540E;&#x7ED1;&#x5B9A;&#x7684;&#x5148;&#x6267;&#x884C;&#x3002;</p>
+</li>
+<li><p><strong>attachEvent()&#x4E2D;&#x7684;this&#xFF0C;&#x662F;window</strong>&#x3002;</p>
+</li>
+</ul>
+<h5 id="&#x517C;&#x5BB9;&#x4EE3;&#x7801;">&#x517C;&#x5BB9;&#x4EE3;&#x7801;</h5>
+<pre><code class="lang-js">&lt;body&gt;
+  &lt;button&gt;&#x6309;&#x94AE;&lt;/button&gt;
+&lt;script&gt;
+  var btn = document.getElementsByTagName(&apos;button&apos;)[0];
+  myBind(btn , &quot;click&quot; , function(){
+    alert(this);
+  });
+
+  /*
+  * &#x53C2;&#x6570;&#xFF1A;
+  *  element &#x8981;&#x7ED1;&#x5B9A;&#x4E8B;&#x4EF6;&#x7684;&#x5BF9;&#x8C61;
+  *  eventStr &#x4E8B;&#x4EF6;&#x7684;&#x5B57;&#x7B26;&#x4E32;(&#x4E0D;&#x8981;on)
+  *  callback &#x56DE;&#x8C03;&#x51FD;&#x6570;
+  */
+  function myBind(element , eventStr , callback){
+    if(element.addEventListener){
+      //&#x5927;&#x90E8;&#x5206;&#x6D4F;&#x89C8;&#x5668;&#x517C;&#x5BB9;&#x7684;&#x65B9;&#x5F0F;
+      element.addEventListener(eventStr , callback , false);
+    }else{
+      //IE8&#x53CA;&#x4EE5;&#x4E0B;
+      element.attachEvent(&quot;on&quot;+eventStr , function(){
+        //&#x5728;&#x533F;&#x540D;&#x51FD;&#x6570; function &#x4E2D;&#x8C03;&#x7528;&#x56DE;&#x8C03;&#x51FD;&#x6570;callback
+        callback.call(element);
+      });
+    }
+  }
+&lt;/script&gt;
+&lt;/body&gt;
+</code></pre>
+<h4 id="dom3">DOM3</h4>
+<pre><code class="lang-js">element.addEventListener(<span class="hljs-string">&apos;keyup&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">// TODO</span>
+}, <span class="hljs-literal">false</span>);
+</code></pre>
+<p>DOM3&#x4E2D;&#xFF0C;&#x589E;&#x52A0;&#x4E86;&#x5F88;&#x591A;&#x4E8B;&#x4EF6;&#x7C7B;&#x578B;&#xFF0C;&#x6BD4;&#x5982;&#x9F20;&#x6807;&#x4E8B;&#x4EF6;&#x3001;&#x952E;&#x76D8;&#x4E8B;&#x4EF6;&#x7B49;&#x3002;</p>
+<p><em>PS&#xFF1A;</em>&#x4E3A;&#x4F55;&#x4E8B;&#x4EF6;&#x6CA1;&#x6709;DOM1&#x7684;&#x5199;&#x6CD5;&#x5462;&#xFF1F;&#x56E0;&#x4E3A;&#xFF0C;DOM1&#x6807;&#x51C6;&#x5236;&#x5B9A;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6CA1;&#x6709;&#x6D89;&#x53CA;&#x4E0E;&#x4E8B;&#x4EF6;&#x76F8;&#x5173;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<h3 id="dom&#x4E8B;&#x4EF6;&#x6A21;&#x578B;">DOM&#x4E8B;&#x4EF6;&#x6A21;&#x578B;</h3>
+<p>DOM&#x4E8B;&#x4EF6;&#x6A21;&#x578B;&#x8BB2;&#x7684;&#x5C31;&#x662F;<strong>&#x6355;&#x83B7;&#x548C;&#x5192;&#x6CE1;</strong>&#x3002;&#x5148;&#x6355;&#x83B7;&#xFF0C;&#x518D;&#x5230;&#x76EE;&#x6807;&#xFF0C;&#x518D;&#x5192;&#x6CE1; &#x3002;&#x6355;&#x83B7;&#x662F;&#x4E8B;&#x4EF6;&#x4F1A;&#x4ECE;&#x6700;&#x5916;&#x5C42;&#x5F00;&#x59CB;&#x53D1;&#x751F;&#xFF0C;&#x76F4;&#x5230;&#x6700;&#x5177;&#x4F53;&#x7684;&#x5143;&#x7D20;&#x3002;&#x5192;&#x6CE1;&#x662F;&#x4E8B;&#x4EF6;&#x4F1A;&#x4ECE;&#x6700;&#x5185;&#x5C42;&#x7684;&#x5143;&#x7D20;&#x5F00;&#x59CB;&#x53D1;&#x751F;&#xFF0C;&#x4E00;&#x76F4;&#x5411;&#x4E0A;&#x4F20;&#x64AD;&#xFF0C;&#x76F4;&#x5230;window&#x5BF9;&#x8C61;&#x3002;</p>
+<ul>
+<li>&#x6355;&#x83B7;&#xFF1A;&#x4ECE;&#x4E0A;&#x5F80;&#x4E0B;&#xFF08;&#x76EE;&#x6807;&#x5143;&#x7D20;&#xFF09;&#x3002;</li>
+<li>&#x5192;&#x6CE1;&#xFF1A;&#x4ECE;&#x4E0B;&#xFF08;&#x76EE;&#x6807;&#x5143;&#x7D20;&#xFF09;&#x5F80;&#x4E0A;&#x3002;</li>
+</ul>
+<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlly1giblwt1g4oj30ay09x74g.jpg" alt="&#x4E8B;&#x4EF6;&#x6A21;&#x578B;"></p>
+<h3 id="dom&#x4E8B;&#x4EF6;&#x6D41;">DOM&#x4E8B;&#x4EF6;&#x6D41;</h3>
+<blockquote>
+<p>&#x6D4F;&#x89C8;&#x5668;&#x5728;&#x4E0E;&#x5F53;&#x524D;&#x9875;&#x9762;&#x505A;&#x4EA4;&#x4E92;&#x65F6;&#xFF0C;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x662F;&#x600E;&#x4E48;&#x4F20;&#x9012;&#x5230;&#x9875;&#x9762;&#x4E0A;&#x7684;&#x3002;</p>
+</blockquote>
+<p>DOM &#x6807;&#x51C6;&#x91C7;&#x7528;&#x6355;&#x83B7;+&#x5192;&#x6CE1;&#x3002;&#x4E24;&#x79CD;&#x4E8B;&#x4EF6;&#x6D41;&#x90FD;&#x4F1A;&#x89E6;&#x53D1; DOM &#x7684;&#x6240;&#x6709;&#x5BF9;&#x8C61;&#xFF0C;&#x4ECE; window &#x5BF9;&#x8C61;&#x5F00;&#x59CB;&#xFF0C;&#x4E5F;&#x5728; window &#x5BF9;&#x8C61;&#x7ED3;&#x675F;&#x3002;</p>
+<p>&#x5B8C;&#x6574;&#x7684;&#x4E8B;&#x4EF6;&#x6D41;&#xFF0C;&#x5206;&#x4E09;&#x4E2A;&#x9636;&#x6BB5;&#xFF1A;</p>
+<ul>
+<li>&#x6355;&#x83B7;&#xFF1A;&#x4ECE; window &#x5BF9;&#x8C61;&#x4F20;&#x5230;&#x76EE;&#x6807;&#x5143;&#x7D20;&#x3002;</li>
+<li>&#x76EE;&#x6807;&#x9636;&#x6BB5;&#xFF1A;&#x4E8B;&#x4EF6;&#x901A;&#x8FC7;&#x6355;&#x83B7;&#xFF0C;&#x5230;&#x8FBE;&#x76EE;&#x6807;&#x5143;&#x7D20;&#xFF0C;&#x8FD9;&#x4E2A;&#x9636;&#x6BB5;&#x5C31;&#x662F;&#x76EE;&#x6807;&#x9636;&#x6BB5;&#x3002;</li>
+<li>&#x5192;&#x6CE1;&#xFF1A;&#x4ECE;<strong>&#x76EE;&#x6807;&#x5143;&#x7D20;</strong>&#x4F20;&#x5230; Window &#x5BF9;&#x8C61;&#x3002;</li>
+</ul>
+<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlly1gibluj36zuj30tg0q4ae9.jpg" alt="&#x4E8B;&#x4EF6;&#x6355;&#x83B7;&#x548C;&#x5192;&#x6CE1;"></p>
+<h3 id="dom&#x4E8B;&#x4EF6;&#x6355;&#x83B7;&#x7684;&#x5177;&#x4F53;&#x6D41;&#x7A0B;">DOM&#x4E8B;&#x4EF6;&#x6355;&#x83B7;&#x7684;&#x5177;&#x4F53;&#x6D41;&#x7A0B;</h3>
+<p>&#x6355;&#x83B7;&#x9636;&#x6BB5;&#xFF1A;&#x4E8B;&#x4EF6;&#x4F9D;&#x6B21;&#x4F20;&#x9012;&#x7684;&#x987A;&#x5E8F;&#x662F;&#x4ECE; window -&gt; document -&gt; html -&gt; body -&gt; ...(&#x7236;&#x5143;&#x7D20; -&gt; &#x5B50;&#x5143;&#x7D20;)-&gt; &#x76EE;&#x6807;&#x5143;&#x7D20;</p>
+<pre><code class="lang-js"><span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">&quot;click&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  alert(<span class="hljs-string">&quot;&#x6355;&#x83B7; window&quot;</span>);
+}, <span class="hljs-literal">true</span>);
+
+<span class="hljs-built_in">document</span>.addEventListener(<span class="hljs-string">&quot;click&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  alert(<span class="hljs-string">&quot;&#x6355;&#x83B7; document&quot;</span>);
+}, <span class="hljs-literal">true</span>);
+
+<span class="hljs-built_in">document</span>.documentElement.addEventListener(<span class="hljs-string">&quot;click&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  alert(<span class="hljs-string">&quot;&#x6355;&#x83B7; html&quot;</span>);
+}, <span class="hljs-literal">true</span>);
+
+<span class="hljs-built_in">document</span>.body.addEventListener(<span class="hljs-string">&quot;click&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  alert(<span class="hljs-string">&quot;&#x6355;&#x83B7; body&quot;</span>);
+}, <span class="hljs-literal">true</span>);
+
+fatherBox.addEventListener(<span class="hljs-string">&quot;click&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  alert(<span class="hljs-string">&quot;&#x6355;&#x83B7; father&quot;</span>);
+}, <span class="hljs-literal">true</span>);
+
+childBox.addEventListener(<span class="hljs-string">&quot;click&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  alert(<span class="hljs-string">&quot;&#x6355;&#x83B7; child&quot;</span>);
+}, <span class="hljs-literal">true</span>);
+</code></pre>
+<blockquote>
+<p>&#x5192;&#x6CE1;&#x7684;&#x6D41;&#x7A0B;&#x4E0E;&#x6355;&#x83B7;&#x76F8;&#x53CD;</p>
+</blockquote>
+<h3 id="event-&#x5BF9;&#x8C61;&#x5E38;&#x89C1;&#x5E94;&#x7528;">Event &#x5BF9;&#x8C61;&#x5E38;&#x89C1;&#x5E94;&#x7528;</h3>
+<p>&#x7528;&#x6237;&#x505A;&#x7684;&#x662F;&#x4EC0;&#x4E48;&#x64CD;&#x4F5C;&#xFF08;&#x6BD4;&#x5982;&#xFF0C;&#x662F;&#x6572;&#x952E;&#x76D8;&#x4E86;&#xFF0C;&#x8FD8;&#x662F;&#x70B9;&#x51FB;&#x9F20;&#x6807;&#x4E86;&#xFF09;&#xFF0C;&#x8FD9;&#x4E9B;&#x4E8B;&#x4EF6;&#x57FA;&#x672C;&#x90FD;&#x662F;&#x901A;&#x8FC7;Event&#x5BF9;&#x8C61;&#x62FF;&#x5230;&#x7684;&#x3002;</p>
+<h4 id="&#x963B;&#x6B62;&#x9ED8;&#x8BA4;&#x4E8B;&#x4EF6;">&#x963B;&#x6B62;&#x9ED8;&#x8BA4;&#x4E8B;&#x4EF6;</h4>
+<pre><code class="lang-js"> event.preventDefault();
+</code></pre>
+<p>&#x6BD4;&#x5982;&#xFF0C;&#x5DF2;&#x77E5;<code>&lt;a&gt;</code>&#x6807;&#x7B7E;&#x7ED1;&#x5B9A;&#x4E86;click&#x4E8B;&#x4EF6;&#xFF0C;&#x6B64;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x7ED9;<code>&lt;a&gt;</code>&#x8BBE;&#x7F6E;&#x4E86;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x5C31;&#x963B;&#x6B62;&#x4E86;&#x94FE;&#x63A5;&#x7684;&#x9ED8;&#x8BA4;&#x8DF3;&#x8F6C;&#x3002;</p>
+<h4 id="&#x963B;&#x6B62;&#x5192;&#x6CE1;">&#x963B;&#x6B62;&#x5192;&#x6CE1;</h4>
+<p>w3c&#x7684;&#x65B9;&#x6CD5;&#xFF1A;&#xFF08;&#x706B;&#x72D0;&#x3001;&#x8C37;&#x6B4C;&#x3001;IE11&#xFF09;</p>
+<pre><code class="lang-js">event.stopPropagation();
+</code></pre>
+<p>IE10&#x4EE5;&#x4E0B;&#x5219;&#x662F;&#xFF1A;</p>
+<pre><code class="lang-js">event.cancelBubble = <span class="hljs-literal">true</span>;
+</code></pre>
+<p>&#x517C;&#x5BB9;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// &#x5BF9;box&#x8FDB;&#x884C;&#x4E86;&#x963B;&#x6B62;&#x5192;&#x6CE1;&#xFF0C;&#x4E8B;&#x4EF6;&#x4E0D;&#x4F1A;&#x5411;&#x4E0A;&#x5192;&#x6CE1;&#x4F20;&#x9012;&#x5230;&#x7236;&#x5143;&#x7D20;&#x3001;body&#x3001;html&#x3001;document&#x3001;window</span>
+box.onclick = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">event</span>) </span>{
+  alert(<span class="hljs-string">&quot;child&quot;</span>);
+  <span class="hljs-comment">//&#x963B;&#x6B62;&#x5192;&#x6CE1;</span>
+  event = event || <span class="hljs-built_in">window</span>.event;
+  <span class="hljs-keyword">if</span> (event &amp;&amp; event.stopPropagation) {
+      event.stopPropagation();
+  } <span class="hljs-keyword">else</span> {
+    event.cancelBubble = <span class="hljs-literal">true</span>;
+    }
+}
+</code></pre>
+<p>&#x7ECF;&#x5E38;&#x5728;&#x4E1A;&#x52A1;&#x573A;&#x666F;&#x4E2D;&#x9047;&#x5230;&#x3002;</p>
+<h4 id="&#x8BBE;&#x7F6E;&#x4E8B;&#x4EF6;&#x4F18;&#x5148;&#x7EA7;">&#x8BBE;&#x7F6E;&#x4E8B;&#x4EF6;&#x4F18;&#x5148;&#x7EA7;</h4>
+<pre><code class="lang-js">event.stopImmediatePropagation();
+</code></pre>
+<p>&#x573A;&#x666F;&#xFF1A;&#x6211;&#x7528;addEventListener&#x7ED9;&#x67D0;&#x6309;&#x94AE;&#x540C;&#x65F6;&#x6CE8;&#x518C;&#x4E86;&#x4E8B;&#x4EF6;A&#x3001;&#x4E8B;&#x4EF6;B&#x3002;&#x6B64;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x5355;&#x51FB;&#x6309;&#x94AE;&#xFF0C;&#x5C31;&#x4F1A;&#x4F9D;&#x6B21;&#x6267;&#x884C;&#x4E8B;&#x4EF6;A&#x548C;&#x4E8B;&#x4EF6;B&#x3002;&#x73B0;&#x5728;&#x8981;&#x6C42;&#xFF1A;&#x5355;&#x51FB;&#x6309;&#x94AE;&#x65F6;&#xFF0C;&#x53EA;&#x6267;&#x884C;&#x4E8B;&#x4EF6;A&#xFF0C;&#x4E0D;&#x6267;&#x884C;&#x4E8B;&#x4EF6;B&#x3002;&#x8BE5;&#x600E;&#x4E48;&#x505A;&#x5462;&#xFF1F;&#x8FD9;&#x662F;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x7528;&#x5230;<code>stopImmediatePropagation</code>&#x65B9;&#x6CD5;&#x4E86;&#x3002;&#x505A;&#x6CD5;&#x662F;&#xFF1A;&#x5728;&#x4E8B;&#x4EF6;A&#x7684;&#x54CD;&#x5E94;&#x51FD;&#x6570;&#x4E2D;&#x52A0;&#x5165;&#x8BE5;&#x8BED;&#x53E5;&#x3002;</p>
+<h4 id="event-&#x5C5E;&#x6027;">event &#x5C5E;&#x6027;</h4>
+<p>event &#x6709;&#x5F88;&#x591A;&#x5C5E;&#x6027;&#xFF0C;&#x5E38;&#x89C1;&#x5C5E;&#x6027;&#x6709;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-js"> event.currentTarget   <span class="hljs-comment">//&#x5F53;&#x524D;&#x6240;&#x7ED1;&#x5B9A;&#x7684;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;&#x3002;&#x5728;&#x4E8B;&#x4EF6;&#x59D4;&#x6258;&#x4E2D;&#xFF0C;&#x6307;&#x7684;&#x662F;&#x3010;&#x7236;&#x5143;&#x7D20;&#x3011;&#x3002;</span>
+event.target  <span class="hljs-comment">//&#x5F53;&#x524D;&#x88AB;&#x70B9;&#x51FB;&#x7684;&#x5143;&#x7D20;&#x3002;&#x5728;&#x4E8B;&#x4EF6;&#x59D4;&#x6258;&#x4E2D;&#xFF0C;&#x6307;&#x7684;&#x662F;&#x3010;&#x5B50;&#x5143;&#x7D20;&#x3011;&#x3002;</span>
+</code></pre>
+<p><img src="http://img.smyhvae.com/20180203_1739.png" alt=""></p>
+<p>&#x7531;&#x4E8E;pageX &#x548C; pageY&#x7684;&#x517C;&#x5BB9;&#x6027;&#x4E0D;&#x597D;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x505A;&#xFF1A;</p>
+<ul>
+<li>&#x9F20;&#x6807;&#x5728;&#x9875;&#x9762;&#x7684;&#x4F4D;&#x7F6E; = &#x6EDA;&#x52A8;&#x6761;&#x6EDA;&#x52A8;&#x7684;&#x8DDD;&#x79BB; + &#x53EF;&#x89C6;&#x533A;&#x57DF;&#x7684;&#x5750;&#x6807;&#x3002;</li>
+</ul>
+<h3 id="&#x81EA;&#x5B9A;&#x4E49;&#x4E8B;&#x4EF6;">&#x81EA;&#x5B9A;&#x4E49;&#x4E8B;&#x4EF6;</h3>
+<p>&#x81EA;&#x5B9A;&#x4E49;&#x4E8B;&#x4EF6;&#x7684;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> myEvent = <span class="hljs-keyword">new</span> Event(<span class="hljs-string">&apos;clickTest&apos;</span>);
+element.addEventListener(<span class="hljs-string">&apos;clickTest&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;hello&apos;</span>);
+});
+
+<span class="hljs-comment">//&#x5143;&#x7D20;&#x6CE8;&#x518C;&#x4E8B;&#x4EF6;</span>
+element.dispatchEvent(myEvent); <span class="hljs-comment">//&#x6CE8;&#x610F;&#xFF0C;&#x53C2;&#x6570;&#x662F;&#x5199;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61; myEvent&#xFF0C;&#x4E0D;&#x662F;&#x5199; &#x4E8B;&#x4EF6;&#x540D; clickTest</span>
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x662F;&#x5B9A;&#x4E49;&#x5B8C;&#x4E86;&#x4E4B;&#x540E;&#xFF0C;&#x5C31;&#x76F4;&#x63A5;&#x81EA;&#x52A8;&#x89E6;&#x53D1;&#x4E86;&#x3002;&#x5728;&#x6B63;&#x5E38;&#x7684;&#x4E1A;&#x52A1;&#x4E2D;&#xFF0C;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x4E00;&#x822C;&#x662F;&#x548C;&#x522B;&#x7684;&#x4E8B;&#x4EF6;&#x7ED3;&#x5408;&#x7528;&#x7684;&#x3002;&#x6BD4;&#x5982;<strong>&#x5EF6;&#x65F6;&#x5668;&#x8BBE;&#x7F6E;&#x6309;&#x94AE;</strong>&#x7684;&#x52A8;&#x4F5C;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> myEvent = <span class="hljs-keyword">new</span> Event(<span class="hljs-string">&apos;clickTest&apos;</span>);
+element.addEventListener(<span class="hljs-string">&apos;clickTest&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;hello&apos;</span>);
+});
+setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  element.dispatchEvent(myEvent); <span class="hljs-comment">//&#x6CE8;&#x610F;&#xFF0C;&#x53C2;&#x6570;&#x662F;&#x5199;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61; myEvent&#xFF0C;&#x4E0D;&#x662F;&#x5199; &#x4E8B;&#x4EF6;&#x540D; clickTest</span>
+}, <span class="hljs-number">1000</span>);
+</code></pre>
+<h3 id="&#x4E8B;&#x4EF6;&#x59D4;&#x6258;">&#x4E8B;&#x4EF6;&#x59D4;&#x6258;</h3>
+<p>&#x901A;&#x4FD7;&#x5730;&#x6765;&#x8BB2;&#xFF0C;&#x5C31;&#x662F;&#x628A;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x54CD;&#x5E94;&#x4E8B;&#x4EF6;&#xFF08;click&#x3001;keydown......&#xFF09;&#x7684;&#x51FD;&#x6570;&#x59D4;&#x6258;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#x8BF4;&#x6709;&#x4E00;&#x4E2A;&#x5217;&#x8868; ul&#xFF0C;&#x5217;&#x8868;&#x4E4B;&#x4E2D;&#x6709;&#x5927;&#x91CF;&#x7684;&#x5217;&#x8868;&#x9879; <code>&lt;a&gt;</code>&#x6807;&#x7B7E;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;parent-list&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:;&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;my_link&quot;</span>&gt;</span>&#x8D85;&#x94FE;&#x63A5;&#x4E00;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:;&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;my_link&quot;</span>&gt;</span>&#x8D85;&#x94FE;&#x63A5;&#x4E8C;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:;&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;my_link&quot;</span>&gt;</span>&#x8D85;&#x94FE;&#x63A5;&#x4E09;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
+<p>&#x5F53;&#x6211;&#x4EEC;&#x7684;&#x9F20;&#x6807;&#x79FB;&#x5230;<code>&lt;a&gt;</code>&#x6807;&#x7B7E;&#x4E0A;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x9700;&#x8981;&#x83B7;&#x53D6;&#x6B64;<code>&lt;a&gt;</code>&#x7684;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x5E76;&#x98D8;&#x51FA;&#x60AC;&#x6D6E;&#x7A97;&#x4EE5;&#x663E;&#x793A;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#xFF0C;&#x6216;&#x8005;&#x5F53;&#x67D0;&#x4E2A;<code>&lt;a&gt;</code>&#x88AB;&#x70B9;&#x51FB;&#x7684;&#x65F6;&#x5019;&#x9700;&#x8981;&#x89E6;&#x53D1;&#x76F8;&#x5E94;&#x7684;&#x5904;&#x7406;&#x4E8B;&#x4EF6;&#x3002;&#x6211;&#x4EEC;&#x901A;&#x5E38;&#x7684;&#x5199;&#x6CD5;&#xFF0C;&#x662F;&#x4E3A;&#x6BCF;&#x4E2A;<code>&lt;a&gt;</code>&#x90FD;&#x7ED1;&#x5B9A;&#x7C7B;&#x4F3C;onMouseOver&#x6216;&#x8005;onClick&#x4E4B;&#x7C7B;&#x7684;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#xFF1A;</p>
+<pre><code class="lang-javascript">    <span class="hljs-built_in">window</span>.onload = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        <span class="hljs-keyword">var</span> parentNode = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;parent-list&quot;</span>);
+        <span class="hljs-keyword">var</span> aNodes = parentNode.getElementByTagName(<span class="hljs-string">&quot;a&quot;</span>);
+        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i=<span class="hljs-number">0</span>, l = aNodes.length; i &lt; l; i++){
+
+            aNodes[i].onclick = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+                <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&#x6211;&#x662F;&#x8D85;&#x94FE;&#x63A5; a &#x7684;&#x5355;&#x51FB;&#x76F8;&#x5E94;&#x51FD;&#x6570;&apos;</span>);
+            }
+        }
+    }
+</code></pre>
+<p>&#x4F46;&#x662F;&#xFF0C;&#x4E0A;&#x9762;&#x7684;&#x505A;&#x6CD5;&#x8FC7;&#x4E8E;&#x6D88;&#x8017;&#x5185;&#x5B58;&#x548C;&#x6027;&#x80FD;&#x3002;<strong>&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#xFF0C;&#x53EA;&#x7ED1;&#x5B9A;&#x4E00;&#x6B21;&#x4E8B;&#x4EF6;&#xFF0C;&#x5373;&#x53EF;&#x5E94;&#x7528;&#x5230;&#x591A;&#x4E2A;&#x5143;&#x7D20;&#x4E0A;</strong>&#xFF0C;&#x5373;&#x4F7F;&#x5143;&#x7D20;&#x662F;&#x540E;&#x6765;&#x6DFB;&#x52A0;&#x7684;&#x3002;</p>
+<p>&#x56E0;&#x6B64;&#xFF0C;&#x6BD4;&#x8F83;&#x597D;&#x7684;&#x65B9;&#x6CD5;&#x5C31;&#x662F;&#x628A;&#x8FD9;&#x4E2A;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;&#x7ED1;&#x5B9A;&#x5230;&#x4ED6;&#x7684;&#x7236;&#x5C42;&#xFF0C;&#x4E5F;&#x5C31;&#x662F; <code>ul</code> &#x4E0A;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x6267;&#x884C;&#x4E8B;&#x4EF6;&#x51FD;&#x6570;&#x7684;&#x65F6;&#x5019;&#x518D;&#x53BB;&#x5339;&#x914D;&#x5224;&#x65AD;&#x76EE;&#x6807;&#x5143;&#x7D20;&#x3002;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-html">    <span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span>&gt;</span><span class="javascript">
+            <span class="hljs-built_in">window</span>.onload = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+
+                <span class="hljs-comment">// &#x83B7;&#x53D6;&#x7236;&#x8282;&#x70B9;&#xFF0C;&#x5E76;&#x4E3A;&#x5B83;&#x7ED1;&#x5B9A;click&#x5355;&#x51FB;&#x4E8B;&#x4EF6;&#x3002; false &#x8868;&#x793A;&#x4E8B;&#x4EF6;&#x5728;&#x5192;&#x6CE1;&#x9636;&#x6BB5;&#x89E6;&#x53D1;&#xFF08;&#x9ED8;&#x8BA4;&#xFF09;</span>
+                <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;parent-list&apos;</span>).addEventListener(<span class="hljs-string">&apos;click&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>) </span>{
+                    event = event || <span class="hljs-built_in">window</span>.event;
+
+                    <span class="hljs-comment">// e.target &#x8868;&#x793A;&#xFF1A;&#x89E6;&#x53D1;&#x4E8B;&#x4EF6;&#x7684;&#x5BF9;&#x8C61;</span>
+                    <span class="hljs-comment">//&#x5982;&#x679C;&#x89E6;&#x53D1;&#x4E8B;&#x4EF6;&#x7684;&#x5BF9;&#x8C61;&#x662F;&#x6211;&#x4EEC;&#x671F;&#x671B;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x5219;&#x6267;&#x884C;&#x5426;&#x5219;&#x4E0D;&#x6267;&#x884C;</span>
+                    <span class="hljs-keyword">if</span> (event.target &amp;&amp; event.target.className == <span class="hljs-string">&apos;link&apos;</span>) {
+                    <span class="hljs-comment">// &#x6216;&#x8005;&#x5199;&#x6210; if (event.target &amp;&amp; event.target.nodeName.toUpperCase() == &apos;A&apos;) {</span>
+                        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&#x6211;&#x662F;ul&#x7684;&#x5355;&#x51FB;&#x54CD;&#x5E94;&#x51FD;&#x6570;&apos;</span>);
+                    }
+                }, <span class="hljs-literal">false</span>);
+            };
+        </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;parent-list&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-color: #bfa;&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x6211;&#x662F;p&#x5143;&#x7D20;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:;&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;link&quot;</span>&gt;</span>&#x8D85;&#x94FE;&#x63A5;&#x4E00;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:;&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;link&quot;</span>&gt;</span>&#x8D85;&#x94FE;&#x63A5;&#x4E8C;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;javascript:;&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;link&quot;</span>&gt;</span>&#x8D85;&#x94FE;&#x63A5;&#x4E09;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+<p>&#x4E0A;&#x65B9;&#x4EE3;&#x7801;&#xFF0C;&#x4E3A;&#x7236;&#x8282;&#x70B9;&#x6CE8;&#x518C; click &#x4E8B;&#x4EF6;&#xFF0C;&#x5F53;&#x5B50;&#x8282;&#x70B9;&#x88AB;&#x70B9;&#x51FB;&#x7684;&#x65F6;&#x5019;&#xFF0C;click&#x4E8B;&#x4EF6;&#x4F1A;&#x4ECE;&#x5B50;&#x8282;&#x70B9;&#x5F00;&#x59CB;<strong>&#x5411;&#x7236;&#x8282;&#x70B9;&#x5192;&#x6CE1;</strong>&#x3002;<strong>&#x7236;&#x8282;&#x70B9;&#x6355;&#x83B7;&#x5230;&#x4E8B;&#x4EF6;</strong>&#x4E4B;&#x540E;&#xFF0C;&#x5F00;&#x59CB;&#x6267;&#x884C;&#x65B9;&#x6CD5;&#x4F53;&#x91CC;&#x7684;&#x5185;&#x5BB9;&#xFF1A;&#x901A;&#x8FC7;&#x5224;&#x65AD; event.target &#x62FF;&#x5230;&#x4E86;&#x88AB;&#x70B9;&#x51FB;&#x7684;&#x5B50;&#x8282;&#x70B9;<code>&lt;a&gt;</code>&#x3002;&#x4ECE;&#x800C;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x5230;&#x76F8;&#x5E94;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x5E76;&#x4F5C;&#x5904;&#x7406;&#x3002;</p>
+<p>&#x6362;&#x800C;&#x8A00;&#x4E4B;&#xFF0C;&#x53C2;&#x6570;&#x4E3A;false&#xFF0C;&#x8BF4;&#x660E;&#x4E8B;&#x4EF6;&#x662F;&#x5728;&#x5192;&#x6CE1;&#x9636;&#x6BB5;&#x89E6;&#x53D1;&#xFF08;&#x5B50;&#x5143;&#x7D20;&#x5411;&#x7236;&#x5143;&#x7D20;&#x4F20;&#x9012;&#x4E8B;&#x4EF6;&#xFF09;&#x3002;&#x800C;&#x7236;&#x8282;&#x70B9;&#x6CE8;&#x518C;&#x4E86;&#x4E8B;&#x4EF6;&#x51FD;&#x6570;&#xFF0C;&#x5B50;&#x8282;&#x70B9;&#x6CA1;&#x6709;&#x6CE8;&#x518C;&#x4E8B;&#x4EF6;&#x51FD;&#x6570;&#xFF0C;&#x6B64;&#x65F6;&#xFF0C;&#x4F1A;&#x5728;&#x7236;&#x8282;&#x70B9;&#x4E2D;&#x6267;&#x884C;&#x51FD;&#x6570;&#x4F53;&#x91CC;&#x7684;&#x4EE3;&#x7801;&#x3002;</p>
+<blockquote>
+<p><strong>&#x603B;&#x7ED3;</strong>&#xFF1A;&#x4E8B;&#x4EF6;&#x59D4;&#x6258;&#x662F;&#x5229;&#x7528;&#x4E86;<strong>&#x5192;&#x6CE1;&#x673A;&#x5236;</strong>&#xFF0C;&#x51CF;&#x5C11;&#x4E86;&#x4E8B;&#x4EF6;&#x7ED1;&#x5B9A;&#x7684;&#x6B21;&#x6570;&#xFF0C;&#x51CF;&#x5C11;&#x5185;&#x5B58;&#x6D88;&#x8017;&#xFF0C;&#x63D0;&#x9AD8;&#x6027;&#x80FD;&#x3002;</p>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="bind、call、apply的区别.html" class="navigation navigation-prev " aria-label="Previous page: bind、call、apply的区别">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Promise.html" class="navigation navigation-next " aria-label="Next page: Promise">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"DOM事件","level":"1.2.3.16","depth":3,"next":{"title":"Promise","level":"1.2.3.17","depth":3,"path":"Promise.md","ref":"Promise.md","articles":[]},"previous":{"title":"bind、call、apply的区别","level":"1.2.3.15","depth":3,"path":"bind、call、apply的区别.md","ref":"bind、call、apply的区别.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"DOM事件.md","mtime":"2020-09-01T17:21:58.986Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-04T16:16:56.568Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1585 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>继承的实现方式及比较 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="浏览器内核线程.html" />
+    
+    
+    <link rel="prev" href="函数式编程compose.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    前端知识
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="HTML.html">
+            
+                <a href="HTML.html">
+            
+                    
+                    HTML(HTML5)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="HTML 语义化.html">
+            
+                <a href="HTML 语义化.html">
+            
+                    
+                    HTML 语义化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="浏览器内核的理解.html">
+            
+                <a href="浏览器内核的理解.html">
+            
+                    
+                    浏览器内核的理解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="CSS.html">
+            
+                <a href="CSS.html">
+            
+                    
+                    CSS(CSS3)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="CSS盒子模型及其理解.html">
+            
+                <a href="CSS盒子模型及其理解.html">
+            
+                    
+                    CSS盒子模型及其理解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="未知宽高元素水平垂直居中（方案及比较）.html">
+            
+                <a href="未知宽高元素水平垂直居中（方案及比较）.html">
+            
+                    
+                    未知宽高元素水平垂直居中(方案及比较)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="BOM和DOM.html">
+            
+                <a href="BOM和DOM.html">
+            
+                    
+                    BOM和DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="offset、client与scroll的区别.html">
+            
+                <a href="offset、client与scroll的区别.html">
+            
+                    
+                    offset、client与scroll的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="JavaScript.html">
+            
+                <a href="JavaScript.html">
+            
+                    
+                    JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="原始值和引用值类型及区别.html">
+            
+                <a href="原始值和引用值类型及区别.html">
+            
+                    
+                    原始值和引用值类型及区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="判断数据类型及方法对比.html">
+            
+                <a href="判断数据类型及方法对比.html">
+            
+                    
+                    判断数据类型及方法对比
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="类数组与数组的区别与转换.html">
+            
+                <a href="类数组与数组的区别与转换.html">
+            
+                    
+                    类数组与数组的区别与转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="闭包及其作用.html">
+            
+                <a href="闭包及其作用.html">
+            
+                    
+                    闭包及其作用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="浏览器渲染机制.html">
+            
+                <a href="浏览器渲染机制.html">
+            
+                    
+                    浏览器渲染机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.6" data-path="this 的指向.html">
+            
+                <a href="this 的指向.html">
+            
+                    
+                    this 的指向
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.7" data-path="原型和原型链.html">
+            
+                <a href="原型和原型链.html">
+            
+                    
+                    原型和原型链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.8" data-path="EventLoop事件循环.html">
+            
+                <a href="EventLoop事件循环.html">
+            
+                    
+                    EventLoop事件循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.9" data-path="作用域和作用域链、执行期上下文.html">
+            
+                <a href="作用域和作用域链、执行期上下文.html">
+            
+                    
+                    作用域和作用域链、执行期上下文
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.10" data-path="深拷贝与浅拷贝.html">
+            
+                <a href="深拷贝与浅拷贝.html">
+            
+                    
+                    深拷贝与浅拷贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.11" data-path="面向对象.html">
+            
+                <a href="面向对象.html">
+            
+                    
+                    面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12" data-path="数组的常见API.html">
+            
+                <a href="数组的常见API.html">
+            
+                    
+                    数组的常见API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.13" data-path="Ajax.html">
+            
+                <a href="Ajax.html">
+            
+                    
+                    Ajax及同源策略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.14" data-path="跨域通信.html">
+            
+                <a href="跨域通信.html">
+            
+                    
+                    跨域通信
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.15" data-path="bind、call、apply的区别.html">
+            
+                <a href="bind、call、apply的区别.html">
+            
+                    
+                    bind、call、apply的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.16" data-path="DOM事件.html">
+            
+                <a href="DOM事件.html">
+            
+                    
+                    DOM事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.17" data-path="Promise.html">
+            
+                <a href="Promise.html">
+            
+                    
+                    Promise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.18" data-path="防抖和节流.html">
+            
+                <a href="防抖和节流.html">
+            
+                    
+                    防抖和节流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.19" data-path="JS的垃圾回收机制.html">
+            
+                <a href="JS的垃圾回收机制.html">
+            
+                    
+                    JS的垃圾回收机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.20" data-path="函数式编程compose.html">
+            
+                <a href="函数式编程compose.html">
+            
+                    
+                    函数式编程compose
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3.21" data-path="继承的实现方式及比较.html">
+            
+                <a href="继承的实现方式及比较.html">
+            
+                    
+                    继承的实现方式及比较
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.22" data-path="浏览器内核线程.html">
+            
+                <a href="浏览器内核线程.html">
+            
+                    
+                    浏览器内核线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.23" data-path="前端笔试总结.html">
+            
+                <a href="前端笔试总结.html">
+            
+                    
+                    前端笔试总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.24" data-path="cookies、sessionStorage和localStorage的区别.html">
+            
+                <a href="cookies、sessionStorage和localStorage的区别.html">
+            
+                    
+                    cookies、sessionStorage和localStorage的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.25" data-path="package.json、package-lock.json区别.html">
+            
+                <a href="package.json、package-lock.json区别.html">
+            
+                    
+                    package.json、package-lock.json区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="ES6.html">
+            
+                <a href="ES6.html">
+            
+                    
+                    ES6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" >
+            
+                <span>
+            
+                    
+                    JQuery
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="NodeJS.html">
+            
+                <a href="NodeJS.html">
+            
+                    
+                    NodeJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="Web安全.html">
+            
+                <a href="Web安全.html">
+            
+                    
+                    Web安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" >
+            
+                <span>
+            
+                    
+                    浏览器
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="前端工程化.html">
+            
+                <a href="前端工程化.html">
+            
+                    
+                    前端工程化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" >
+            
+                <span>
+            
+                    
+                    性能优化
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="手撕代码.html">
+            
+                <a href="手撕代码.html">
+            
+                    
+                    算法编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.11.1" data-path="剑指offer算法.html">
+            
+                <a href="剑指offer算法.html">
+            
+                    
+                    剑指Offer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    MongoDB
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="数据可视化.html">
+            
+                <a href="数据可视化.html">
+            
+                    
+                    数据可视化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    计算机基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="HTTP与计算机网络.html">
+            
+                <a href="HTTP与计算机网络.html">
+            
+                    
+                    计算机网络
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="Cookie与Session.html">
+            
+                <a href="Cookie与Session.html">
+            
+                    
+                    Cookie与Session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="URL和URI.html">
+            
+                <a href="URL和URI.html">
+            
+                    
+                    URL和URI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="在浏览器中输入URL到页面渲染的整个过程.html">
+            
+                <a href="在浏览器中输入URL到页面渲染的整个过程.html">
+            
+                    
+                    在浏览器中输入URL到页面渲染的整个过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="TCP与UDP区别.html">
+            
+                <a href="TCP与UDP区别.html">
+            
+                    
+                    TCP与UDP区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.5" data-path="TCP/IP协议分层管理.md">
+            
+                <span>
+            
+                    
+                    TCP/IP协议分层管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.6" data-path="TCPIP通信传输流.html">
+            
+                <a href="TCPIP通信传输流.html">
+            
+                    
+                    TCP/IP通信传输流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.7" data-path="HTTPS与HTTP区别及实现方式.html">
+            
+                <a href="HTTPS与HTTP区别及实现方式.html">
+            
+                    
+                    HTTPS与HTTP区别及实现方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.8" data-path="HTTP1.1和HTTP1.0、HTTP2的区别.html">
+            
+                <a href="HTTP1.1和HTTP1.0、HTTP2的区别.html">
+            
+                    
+                    HTTP1.1和HTTP1.0、HTTP2的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.9" data-path="HTTP方法.html">
+            
+                <a href="HTTP方法.html">
+            
+                    
+                    HTTP方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.10" data-path="GET和POST的区别.html">
+            
+                <a href="GET和POST的区别.html">
+            
+                    
+                    GET和POST的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.11" data-path="HTTP建立持久连接的意义.html">
+            
+                <a href="HTTP建立持久连接的意义.html">
+            
+                    
+                    HTTP建立持久连接的意义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.12" data-path="HTTP报文的结构.html">
+            
+                <a href="HTTP报文的结构.html">
+            
+                    
+                    HTTP报文的结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.13" data-path="HTTP状态码.html">
+            
+                <a href="HTTP状态码.html">
+            
+                    
+                    HTTP状态码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.14" data-path="HTTP报文首部.html">
+            
+                <a href="HTTP报文首部.html">
+            
+                    
+                    HTTP报文首部字段
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.15" data-path="对Websocket的了解.html">
+            
+                <a href="对Websocket的了解.html">
+            
+                    
+                    对Websocket的了解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.16" data-path="Cookie相关首部字段.html">
+            
+                <a href="Cookie相关首部字段.html">
+            
+                    
+                    Cookie相关首部字段
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.17" >
+            
+                <span>
+            
+                    
+                    Web服务器及其组成
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.18" >
+            
+                <span>
+            
+                    
+                    基于HTTP的功能追加协议（SPY、WebSocket、HTTP）
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="数据可视化.html">
+            
+                <a href="数据可视化.html">
+            
+                    
+                    操作系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="进程和线程.html">
+            
+                <a href="进程和线程.html">
+            
+                    
+                    进程和线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="进程调度算法.html">
+            
+                <a href="进程调度算法.html">
+            
+                    
+                    进程调度算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" >
+            
+                <span>
+            
+                    
+                    数据结构
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" >
+            
+                <span>
+            
+                    
+                    算法
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    数据库
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    前端框架及工具
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="Vue.html">
+            
+                <a href="Vue.html">
+            
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="React.html">
+            
+                <a href="React.html">
+            
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" >
+            
+                <span>
+            
+                    
+                    AngularJS
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" >
+            
+                <span>
+            
+                    
+                    Webpack
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" >
+            
+                <span>
+            
+                    
+                    TypeScript
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" >
+            
+                <span>
+            
+                    
+                    Element UI
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" >
+            
+                <span>
+            
+                    
+                    Bootstrap
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    秋招整理
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="腾讯前端面经.html">
+            
+                <a href="腾讯前端面经.html">
+            
+                    
+                    腾讯面经
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="前端笔试总结.html">
+            
+                <a href="前端笔试总结.html">
+            
+                    
+                    笔经整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="开放问题.html">
+            
+                <a href="开放问题.html">
+            
+                    
+                    开放问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >继承的实现方式及比较</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="&#x7EE7;&#x627F;&#x7684;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;&#x53CA;&#x6BD4;&#x8F83;">&#x7EE7;&#x627F;&#x7684;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;&#x53CA;&#x6BD4;&#x8F83;</h3>
+<h4 id="&#x501F;&#x7528;&#x6784;&#x9020;&#x51FD;&#x6570;&#x6CD5;">&#x501F;&#x7528;&#x6784;&#x9020;&#x51FD;&#x6570;&#x6CD5;</h4>
+<p>&#x5728;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E2D; &#x4F7F;&#x7528;<code>Parent.call(this)</code>&#x7684;&#x65B9;&#x6CD5;&#x7EE7;&#x627F;&#x7236;&#x7C7B;&#x5C5E;&#x6027;&#x3002;</p>
+<p>&#x539F;&#x7406;&#xFF1A; &#x5C06;&#x5B50;&#x7C7B;&#x7684; this &#x4F7F;&#x7528;&#x7236;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x8DD1;&#x4E00;&#x904D;</p>
+<p>&#x7F3A;&#x70B9;&#xFF1A; Parent &#x539F;&#x578B;&#x94FE;&#x4E0A;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#x5E76;&#x4E0D;&#x4F1A;&#x88AB;&#x5B50;&#x7C7B;&#x7EE7;&#x627F;</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Parent</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">this</span>.name = <span class="hljs-string">&quot;parent&quot;</span>;
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Child</span>(<span class="hljs-params"></span>) </span>{
+  Parent.call(<span class="hljs-keyword">this</span>);
+  <span class="hljs-keyword">this</span>.type = <span class="hljs-string">&quot;child&quot;</span>;
+}
+</code></pre>
+<h4 id="&#x539F;&#x578B;&#x94FE;&#x5B9E;&#x73B0;&#x7EE7;&#x627F;">&#x539F;&#x578B;&#x94FE;&#x5B9E;&#x73B0;&#x7EE7;&#x627F;</h4>
+<p>&#x539F;&#x7406;&#xFF1A;&#x628A;&#x5B50;&#x7C7B;&#x7684; prototype&#xFF08;&#x539F;&#x578B;&#x5BF9;&#x8C61;&#xFF09;&#x76F4;&#x63A5;&#x8BBE;&#x7F6E;&#x4E3A;&#x7236;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;</p>
+<p>&#x7F3A;&#x70B9;&#xFF1A;&#x56E0;&#x4E3A;&#x5B50;&#x7C7B;&#x53EA;&#x8FDB;&#x884C;&#x4E00;&#x6B21;&#x539F;&#x578B;&#x66F4;&#x6539;&#xFF0C;&#x6240;&#x4EE5;&#x5B50;&#x7C7B;&#x7684;&#x6240;&#x6709;&#x5B9E;&#x4F8B;&#x4FDD;&#x5B58;&#x7684;&#x662F;&#x540C;&#x4E00;&#x4E2A;&#x7236;&#x7C7B;&#x7684;&#x503C;&#x3002; &#x5F53;&#x5B50;&#x7C7B;&#x5BF9;&#x8C61;&#x4E0A;&#x8FDB;&#x884C;&#x503C;&#x4FEE;&#x6539;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x4FEE;&#x6539;&#x7684;&#x539F;&#x59CB;&#x7C7B;&#x578B;&#x7684;&#x503C;&#xFF0C;&#x90A3;&#x4E48;&#x4F1A;&#x5728;&#x5B9E;&#x4F8B;&#x4E0A;&#x65B0;&#x5EFA;&#x8FD9;&#x6837;&#x4E00;&#x4E2A;&#x503C;&#xFF1B; &#x4F46;&#x5982;&#x679C;&#x662F;&#x5F15;&#x7528;&#x7C7B;&#x578B;&#x7684;&#x8BDD;&#xFF0C;&#x4ED6;&#x5C31;&#x4F1A;&#x53BB;&#x4FEE;&#x6539;&#x5B50;&#x7C7B;&#x4E0A;&#x552F;&#x4E00;&#x4E00;&#x4E2A;&#x7236;&#x7C7B;&#x5B9E;&#x4F8B;&#x91CC;&#x9762;&#x7684;&#x8FD9;&#x4E2A;&#x5F15;&#x7528;&#x7C7B;&#x578B;&#xFF0C;&#x8FD9;&#x4F1A;&#x5F71;&#x54CD;&#x6240;&#x6709;&#x5B50;&#x7C7B;&#x5B9E;&#x4F8B;</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Parent</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">this</span>.name = <span class="hljs-string">&quot;parent&quot;</span>;
+  <span class="hljs-keyword">this</span>.arr = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>];
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Child</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">this</span>.type = <span class="hljs-string">&quot;child&quot;</span>;
+}
+Child.prototype = <span class="hljs-keyword">new</span> Parent();
+<span class="hljs-keyword">var</span> c1 = <span class="hljs-keyword">new</span> Child();
+<span class="hljs-keyword">var</span> c2 = <span class="hljs-keyword">new</span> Child();
+c1.__proto__ === c2.__proto__;
+</code></pre>
+<h4 id="&#x7EC4;&#x5408;&#x7EE7;&#x627F;&#x65B9;&#x5F0F;">&#x7EC4;&#x5408;&#x7EE7;&#x627F;&#x65B9;&#x5F0F;</h4>
+<p>&#x7EC4;&#x5408;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E2D;&#x4F7F;&#x7528; call &#x7EE7;&#x627F;&#x548C;&#x539F;&#x578B;&#x94FE;&#x7EE7;&#x627F;&#x3002;</p>
+<p>&#x539F;&#x7406;&#xFF1A; &#x5B50;&#x7C7B;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E2D;&#x4F7F;&#x7528;<code>Parent.call(this);</code>&#x7684;&#x65B9;&#x5F0F;&#x53EF;&#x4EE5;&#x7EE7;&#x627F;&#x5199;&#x5728;&#x7236;&#x7C7B;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E2D; this &#x4E0A;&#x7ED1;&#x5B9A;&#x7684;&#x5404;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#xFF1B; &#x4F7F;&#x7528;<code>Child.prototype = new Parent()</code>&#x7684;&#x65B9;&#x5F0F;&#x53EF;&#x4EE5;&#x7EE7;&#x627F;&#x6302;&#x5728;&#x5728;&#x7236;&#x7C7B;&#x539F;&#x578B;&#x4E0A;&#x7684;&#x5404;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;</p>
+<p>&#x7F3A;&#x70B9;&#xFF1A; &#x7236;&#x7C7B;&#x6784;&#x9020;&#x51FD;&#x6570;&#x5728;&#x5B50;&#x7C7B;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E2D;&#x6267;&#x884C;&#x4E86;&#x4E00;&#x6B21;&#xFF0C;&#x5728;&#x5B50;&#x7C7B;&#x7ED1;&#x5B9A;&#x539F;&#x578B;&#x65F6;&#x53C8;&#x6267;&#x884C;&#x4E86;&#x4E00;&#x6B21;</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Parent</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">this</span>.name = <span class="hljs-string">&quot;parent&quot;</span>;
+  <span class="hljs-keyword">this</span>.arr = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>];
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Child</span>(<span class="hljs-params"></span>) </span>{
+  Parent.call(<span class="hljs-keyword">this</span>);
+  <span class="hljs-keyword">this</span>.type = <span class="hljs-string">&quot;child&quot;</span>;
+}
+Child.prototype = <span class="hljs-keyword">new</span> Parent();
+</code></pre>
+<h5 id="&#x7EC4;&#x5408;&#x7EE7;&#x627F;&#x65B9;&#x5F0F;-&#x4F18;&#x5316;-1&#xFF1A;">&#x7EC4;&#x5408;&#x7EE7;&#x627F;&#x65B9;&#x5F0F; &#x4F18;&#x5316; 1&#xFF1A;</h5>
+<p>&#x56E0;&#x4E3A;&#x8FD9;&#x65F6;&#x7236;&#x7C7B;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x65B9;&#x6CD5;&#x5DF2;&#x7ECF;&#x88AB;&#x6267;&#x884C;&#x8FC7;&#x4E86;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x5173;&#x5FC3;&#x539F;&#x578B;&#x94FE;&#x4E0A;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#x4E86;</p>
+<pre><code class="lang-js">Child.prototype = Parent.prototype;
+</code></pre>
+<p>&#x7F3A;&#x70B9;&#xFF1A;</p>
+<ul>
+<li>&#x56E0;&#x4E3A;&#x539F;&#x578B;&#x4E0A;&#x6709;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x4E3A;<code>constructor</code>&#xFF0C;&#x6B64;&#x65F6;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x7236;&#x7C7B;&#x7684; prototype &#x7684;&#x8BDD;&#x90A3;&#x4E48;&#x4F1A;&#x5BFC;&#x81F4; &#x5B9E;&#x4F8B;&#x7684; constructor &#x4E3A; Parent&#xFF0C;&#x5373;&#x4E0D;&#x80FD;&#x533A;&#x5206;&#x8FD9;&#x4E2A;&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;&#x662F; Child &#x7684;&#x5B9E;&#x4F8B;&#x8FD8;&#x662F;&#x7236;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;&#x3002;</li>
+<li>&#x5B50;&#x7C7B;&#x4E0D;&#x53EF;&#x76F4;&#x63A5;&#x5728; prototype &#x4E0A;&#x6DFB;&#x52A0;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#xFF0C;&#x56E0;&#x4E3A;&#x4F1A;&#x5F71;&#x54CD;&#x7236;&#x7C7B;&#x7684;&#x539F;&#x578B;</li>
+</ul>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x8FD9;&#x4E2A;&#x65F6;&#x5019; instanseof &#x662F;&#x53EF;&#x4EE5;&#x5224;&#x65AD;&#x51FA;&#x5B9E;&#x4F8B;&#x4E3A; Child &#x7684;&#x5B9E;&#x4F8B;&#x7684;&#xFF0C;&#x56E0;&#x4E3A; instanceof &#x7684;&#x539F;&#x7406;&#x662F;&#x6CBF;&#x7740;&#x5BF9;&#x8C61;&#x7684;<strong>proto</strong>&#x5224;&#x65AD;&#x662F;&#x5426;&#x6709;&#x4E00;&#x4E2A;&#x539F;&#x578B;&#x662F;&#x7B49;&#x4E8E;&#x8BE5;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x539F;&#x578B;&#x7684;&#x3002;&#x8FD9;&#x91CC;&#x628A; Child &#x7684;&#x539F;&#x578B;&#x76F4;&#x63A5;&#x8BBE;&#x7F6E;&#x4E3A;&#x4E86;&#x7236;&#x7C7B;&#x7684;&#x539F;&#x578B;&#xFF0C;&#x90A3;&#x4E48;: &#x5B9E;&#x4F8B;.<code>proto === Child.prototype === Parent.prototype</code></p>
+<h5 id="&#x7EC4;&#x5408;&#x7EE7;&#x627F;&#x65B9;&#x5F0F;-&#x4F18;&#x5316;-2---&#x6DFB;&#x52A0;&#x4E2D;&#x95F4;&#x5BF9;&#x8C61;&#x3010;&#x6700;&#x901A;&#x7528;&#x7248;&#x672C;&#x3011;&#xFF1A;">&#x7EC4;&#x5408;&#x7EE7;&#x627F;&#x65B9;&#x5F0F; &#x4F18;&#x5316; 2 - &#x6DFB;&#x52A0;&#x4E2D;&#x95F4;&#x5BF9;&#x8C61;&#x3010;&#x6700;&#x901A;&#x7528;&#x7248;&#x672C;&#x3011;&#xFF1A;</h5>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Parent</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">this</span>.name = <span class="hljs-string">&quot;parent&quot;</span>;
+  <span class="hljs-keyword">this</span>.arr = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>];
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Child</span>(<span class="hljs-params"></span>) </span>{
+  Parent.call(<span class="hljs-keyword">this</span>);
+  <span class="hljs-keyword">this</span>.type = <span class="hljs-string">&quot;child&quot;</span>;
+}
+
+Child.prototype = <span class="hljs-built_in">Object</span>.create(Parent.prototype); <span class="hljs-comment">//&#x63D0;&#x4F9B;__proto__</span>
+Child.prototype.constrctor = Child;
+</code></pre>
+<p>Object.create()&#x65B9;&#x6CD5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x5BF9;&#x8C61;&#xFF0C;&#x4F7F;&#x7528;&#x73B0;&#x6709;&#x7684;&#x5BF9;&#x8C61;&#x6765;&#x63D0;&#x4F9B;&#x65B0;&#x521B;&#x5EFA;&#x7684;&#x5BF9;&#x8C61;&#x7684;<strong>proto</strong></p>
+<h5 id="&#x5C01;&#x88C5;&#x4E00;&#x4E2A;&#x539F;&#x751F;&#x7684;&#x7EE7;&#x627F;&#x65B9;&#x6CD5;">&#x5C01;&#x88C5;&#x4E00;&#x4E2A;&#x539F;&#x751F;&#x7684;&#x7EE7;&#x627F;&#x65B9;&#x6CD5;</h5>
+<pre><code class="lang-js"><span class="hljs-comment">/**
+ * &#x7EE7;&#x627F;
+ * @param Parent
+ * @param Child
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">extendsClass</span>(<span class="hljs-params">Parent, Child</span>) </span>{
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">F</span>(<span class="hljs-params"></span>) </span>{}
+  F.prototype = Parent.prototype;
+  Child.prototype = <span class="hljs-keyword">new</span> F();
+  Child.prototype.constrctor = Child;
+  <span class="hljs-keyword">return</span> Child;
+}
+</code></pre>
+<h4 id="es5es6-&#x7684;&#x7EE7;&#x627F;&#x9664;&#x4E86;&#x5199;&#x6CD5;&#x4EE5;&#x5916;&#x8FD8;&#x6709;&#x4EC0;&#x4E48;&#x533A;&#x522B;&#xFF1F;">ES5/ES6 &#x7684;&#x7EE7;&#x627F;&#x9664;&#x4E86;&#x5199;&#x6CD5;&#x4EE5;&#x5916;&#x8FD8;&#x6709;&#x4EC0;&#x4E48;&#x533A;&#x522B;&#xFF1F;</h4>
+<ul>
+<li><p>class &#x58F0;&#x660E;&#x4F1A;&#x63D0;&#x5347;&#xFF0C;&#x4F46;&#x4E0D;&#x4F1A;&#x521D;&#x59CB;&#x5316;&#x8D4B;&#x503C;&#x3002;Foo &#x8FDB;&#x5165;&#x6682;&#x65F6;&#x6027;&#x6B7B;&#x533A;&#xFF0C;&#x7C7B;&#x4F3C;&#x4E8E; let&#x3001;const &#x58F0;&#x660E;&#x53D8;&#x91CF;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> bar = <span class="hljs-keyword">new</span> Bar(); <span class="hljs-comment">// it&apos;s ok</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Bar</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">this</span>.bar = <span class="hljs-number">42</span>;
+}
+
+<span class="hljs-keyword">const</span> foo = <span class="hljs-keyword">new</span> Foo(); <span class="hljs-comment">// ReferenceError: Foo is not defined</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{
+  <span class="hljs-keyword">constructor</span>() {
+    <span class="hljs-keyword">this</span>.foo = <span class="hljs-number">42</span>;
+  }
+}
+</code></pre>
+</li>
+<li><p>class &#x58F0;&#x660E;&#x5185;&#x90E8;&#x4F1A;&#x542F;&#x7528;&#x4E25;&#x683C;&#x6A21;&#x5F0F;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// &#x5F15;&#x7528;&#x4E00;&#x4E2A;&#x672A;&#x58F0;&#x660E;&#x7684;&#x53D8;&#x91CF;</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Bar</span>(<span class="hljs-params"></span>) </span>{
+  baz = <span class="hljs-number">42</span>; <span class="hljs-comment">// it&apos;s ok</span>
+}
+<span class="hljs-keyword">const</span> bar = <span class="hljs-keyword">new</span> Bar();
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{
+  <span class="hljs-keyword">constructor</span>() {
+    fol = <span class="hljs-number">42</span>; <span class="hljs-comment">// ReferenceError: fol is not defined</span>
+  }
+}
+<span class="hljs-keyword">const</span> foo = <span class="hljs-keyword">new</span> Foo();
+</code></pre>
+</li>
+<li><p>class &#x7684;&#x6240;&#x6709;&#x65B9;&#x6CD5;&#xFF08;&#x5305;&#x62EC;&#x9759;&#x6001;&#x65B9;&#x6CD5;&#x548C;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#xFF09;&#x90FD;&#x662F;&#x4E0D;&#x53EF;&#x679A;&#x4E3E;&#x7684;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// &#x5F15;&#x7528;&#x4E00;&#x4E2A;&#x672A;&#x58F0;&#x660E;&#x7684;&#x53D8;&#x91CF;</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Bar</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">this</span>.bar = <span class="hljs-number">42</span>;
+}
+Bar.answer = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-number">42</span>;
+};
+Bar.prototype.print = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.bar);
+};
+<span class="hljs-keyword">const</span> barKeys = <span class="hljs-built_in">Object</span>.keys(Bar); <span class="hljs-comment">// [&apos;answer&apos;]</span>
+<span class="hljs-keyword">const</span> barProtoKeys = <span class="hljs-built_in">Object</span>.keys(Bar.prototype); <span class="hljs-comment">// [&apos;print&apos;]</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{
+  <span class="hljs-keyword">constructor</span>() {
+    <span class="hljs-keyword">this</span>.foo = <span class="hljs-number">42</span>;
+  }
+  <span class="hljs-keyword">static</span> answer() {
+    <span class="hljs-keyword">return</span> <span class="hljs-number">42</span>;
+  }
+  print() {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.foo);
+  }
+}
+<span class="hljs-keyword">const</span> fooKeys = <span class="hljs-built_in">Object</span>.keys(Foo); <span class="hljs-comment">// []</span>
+<span class="hljs-keyword">const</span> fooProtoKeys = <span class="hljs-built_in">Object</span>.keys(Foo.prototype); <span class="hljs-comment">// []</span>
+</code></pre>
+</li>
+<li><p>class &#x7684;&#x6240;&#x6709;&#x65B9;&#x6CD5;&#xFF08;&#x5305;&#x62EC;&#x9759;&#x6001;&#x65B9;&#x6CD5;&#x548C;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#xFF09;&#x90FD;&#x6CA1;&#x6709;&#x539F;&#x578B;&#x5BF9;&#x8C61; prototype&#xFF0C;&#x6240;&#x4EE5;&#x4E5F;&#x6CA1;&#x6709;[[construct]]&#xFF0C;&#x4E0D;&#x80FD;&#x4F7F;&#x7528; new &#x6765;&#x8C03;&#x7528;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Bar</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">this</span>.bar = <span class="hljs-number">42</span>;
+}
+Bar.prototype.print = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.bar);
+};
+
+<span class="hljs-keyword">const</span> bar = <span class="hljs-keyword">new</span> Bar();
+<span class="hljs-keyword">const</span> barPrint = <span class="hljs-keyword">new</span> bar.print(); <span class="hljs-comment">// it&apos;s ok</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{
+  <span class="hljs-keyword">constructor</span>() {
+    <span class="hljs-keyword">this</span>.foo = <span class="hljs-number">42</span>;
+  }
+  print() {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.foo);
+  }
+}
+<span class="hljs-keyword">const</span> foo = <span class="hljs-keyword">new</span> Foo();
+<span class="hljs-keyword">const</span> fooPrint = <span class="hljs-keyword">new</span> foo.print(); <span class="hljs-comment">// TypeError: foo.print is not a constructor</span>
+</code></pre>
+</li>
+<li><p>&#x5FC5;&#x987B;&#x4F7F;&#x7528; new &#x8C03;&#x7528; class&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Bar</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">this</span>.bar = <span class="hljs-number">42</span>;
+}
+<span class="hljs-keyword">const</span> bar = Bar(); <span class="hljs-comment">// it&apos;s ok</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{
+  <span class="hljs-keyword">constructor</span>() {
+    <span class="hljs-keyword">this</span>.foo = <span class="hljs-number">42</span>;
+  }
+}
+<span class="hljs-keyword">const</span> foo = Foo(); <span class="hljs-comment">// TypeError: Class constructor Foo cannot be invoked without &apos;new&apos;</span>
+</code></pre>
+</li>
+<li><p>class &#x5185;&#x90E8;&#x65E0;&#x6CD5;&#x91CD;&#x5199;&#x7C7B;&#x540D;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Bar</span>(<span class="hljs-params"></span>) </span>{
+  Bar = <span class="hljs-string">&apos;Baz&apos;</span>; <span class="hljs-comment">// it&apos;s ok</span>
+  <span class="hljs-keyword">this</span>.bar = <span class="hljs-number">42</span>;
+}
+<span class="hljs-keyword">const</span> bar = <span class="hljs-keyword">new</span> Bar();
+<span class="hljs-comment">// Bar: &apos;Baz&apos;</span>
+<span class="hljs-comment">// bar: Bar {bar: 42}  </span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{
+  <span class="hljs-keyword">constructor</span>() {
+    <span class="hljs-keyword">this</span>.foo = <span class="hljs-number">42</span>;
+    Foo = <span class="hljs-string">&apos;Fol&apos;</span>; <span class="hljs-comment">// TypeError: Assignment to constant variable</span>
+  }
+}
+<span class="hljs-keyword">const</span> foo = <span class="hljs-keyword">new</span> Foo();
+Foo = <span class="hljs-string">&apos;Fol&apos;</span>; <span class="hljs-comment">// it&apos;s ok</span>
+</code></pre>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="函数式编程compose.html" class="navigation navigation-prev " aria-label="Previous page: 函数式编程compose">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="浏览器内核线程.html" class="navigation navigation-next " aria-label="Next page: 浏览器内核线程">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"继承的实现方式及比较","level":"1.2.3.21","depth":3,"next":{"title":"浏览器内核线程","level":"1.2.3.22","depth":3,"path":"浏览器内核线程.md","ref":"浏览器内核线程.md","articles":[]},"previous":{"title":"函数式编程compose","level":"1.2.3.20","depth":3,"path":"函数式编程compose.md","ref":"函数式编程compose.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"继承的实现方式及比较.md","mtime":"2020-09-02T00:50:20.176Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-04T16:16:56.568Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
